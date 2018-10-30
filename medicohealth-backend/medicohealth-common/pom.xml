@@ -21,6 +21,13 @@
             <artifactId>medicohealth-common-utils</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>
+
+        <!--Spring Boot dubbo 依赖-->
+        <dependency>
+            <groupId>com.alibaba.boot</groupId>
+            <artifactId>dubbo-spring-boot-starter</artifactId>
+            <version>0.2.0</version>
+        </dependency>
     </dependencies>
 
 </project>

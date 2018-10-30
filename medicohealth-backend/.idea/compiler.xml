@@ -7,10 +7,14 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="medicohealth-common" />
-        <module name="medicohealth-common-email" />
         <module name="medicohealth-common-utils" />
         <module name="medicohealth-dubbo-api" />
+        <module name="medicohealth-restful-email" />
+        <module name="medicohealth-service-email" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="medicohealth-common-email" target="1.5" />
+    </bytecodeTargetLevel>
   </component>
 </project>
