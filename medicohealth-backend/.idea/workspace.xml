@@ -20,23 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MailService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/core/MailService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="SendEmail.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/controller/SendEmail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="165">
-              <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+            <state relative-caret-position="-72">
+              <caret line="23" selection-start-line="23" selection-end-line="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -44,11 +32,44 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmailContextService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medicohealth-dubbo-api/src/main/java/com/supi/mh/api/EmailContextService.java">
+      <file leaf-file-name="SendEmail2Admin.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2Admin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+            <state relative-caret-position="52">
+              <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RandomCode.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-utils/src/main/java/utils/RandomCode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="229">
+              <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+              <folding>
+                <element signature="e#631#632#0" expanded="true" />
+                <element signature="e#669#670#0" expanded="true" />
+                <element signature="e#856#857#0" expanded="true" />
+                <element signature="e#898#899#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/api/EmailService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SendEmail2UserChangePwd.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserChangePwd.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
             </state>
           </provider>
         </entry>
@@ -56,20 +77,11 @@
       <file leaf-file-name="MedicohealthServiceEmailApplication.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/MedicohealthServiceEmailApplication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+            <state relative-caret-position="135">
+              <caret line="9" selection-start-line="9" selection-end-line="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MedicohealthRestfulEmailApplication.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/MedicohealthRestfulEmailApplication.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -77,8 +89,8 @@
       <file leaf-file-name="EmailContext.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/EmailContext.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="570">
-              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            <state relative-caret-position="187">
+              <caret line="29" column="29" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="29" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -86,43 +98,36 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/resources/application.properties">
+      <file leaf-file-name="SendEmail2UserRegister.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserRegister.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+            <state relative-caret-position="152">
+              <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medicohealth-service-email/pom.xml">
+      <file leaf-file-name="SendEmail2UserChangeEmail.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserChangeEmail.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" selection-start-line="56" selection-end-line="56" />
+            <state relative-caret-position="151">
+              <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MedicohealthServiceEmailApplicationTests.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MedicohealthServiceEmailApplicationTests.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/test/java/com/supi/mh/email/service/MedicohealthServiceEmailApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+            <state relative-caret-position="135">
+              <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#672#673#0" expanded="true" />
-                <element signature="e#749#750#0" expanded="true" />
+                <element signature="e#791#792#0" expanded="true" />
+                <element signature="e#864#865#0" expanded="true" />
+                <element signature="e#1059#1060#0" expanded="true" />
+                <element signature="e#1116#1117#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="840">
-              <caret line="56" column="19" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -157,23 +162,26 @@
         <option value="$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/MedicohealthRestfulEmailApplication.java" />
         <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/MailTest.java" />
         <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/MedicohealthServiceEmailApplication.java" />
-        <option value="$PROJECT_DIR$/medicohealth-common/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-common-impl/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-service-email/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/MailService.java" />
         <option value="$PROJECT_DIR$/medicohealth-restful-email/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-dubbo-api/src/main/java/com/supi/mh/api/EmailContextService.java" />
         <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/api/EmailService.java" />
-        <option value="$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/controller/SendEmail.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserChangePwd.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserChangeEmail.java" />
         <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2Admin.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserRegister.java" />
         <option value="$PROJECT_DIR$/medicohealth-restful-email/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/core/MailService.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/EmailContext.java" />
         <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/medicohealth-common/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/EmailContext.java" />
+        <option value="$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/controller/SendEmail.java" />
+        <option value="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-utils/src/main/java/randomcode/RadomCode.java" />
+        <option value="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-utils/src/main/java/utils/RadomCode.java" />
         <option value="$PROJECT_DIR$/medicohealth-service-email/src/test/java/com/supi/mh/email/service/MedicohealthServiceEmailApplicationTests.java" />
+        <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserChangeEmail.java" />
+        <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserChangePwd.java" />
+        <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserRegister.java" />
+        <option value="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-utils/src/main/java/utils/RandomCode.java" />
       </list>
     </option>
   </component>
@@ -221,7 +229,52 @@
             <path>
               <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-restful-email" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common-impl" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common-utils" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common-utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common-utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common-utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common-impl" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common-utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
@@ -277,6 +330,16 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="service" type="462c0819:PsiDirectoryNode" />
               <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-service-email" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="impl" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
@@ -351,7 +414,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.MedicohealthServiceEmailApplicationTests.contextLoads">
+  <component name="RunManager" selected="JUnit.MedicohealthServiceEmailApplicationTests.testSendEmail2UserChangeEmail">
     <configuration name="MedicohealthRestfulEmailApplication" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.supi.mh.email.restful.MedicohealthRestfulEmailApplication" />
       <module name="medicohealth-restful-email" />
@@ -446,6 +509,29 @@
       </option>
       <patterns />
     </configuration>
+    <configuration name="MedicohealthServiceEmailApplicationTests.testSendEmail2UserChangeEmail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="medicohealth-service-email" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.supi.mh.email.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.supi.mh.email.service" />
+      <option name="MAIN_CLASS_NAME" value="com.supi.mh.email.service.MedicohealthServiceEmailApplicationTests" />
+      <option name="METHOD_NAME" value="testSendEmail2UserChangeEmail" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -505,11 +591,13 @@
       <item itemvalue="Application.MedicohealthServiceEmailApplication" />
       <item itemvalue="JUnit.MedicohealthServiceEmailApplicationTests.contextLoads" />
       <item itemvalue="JUnit.MedicohealthServiceEmailApplicationTests.testSendEmail2Admin" />
+      <item itemvalue="JUnit.MedicohealthServiceEmailApplicationTests.testSendEmail2UserChangeEmail" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MedicohealthServiceEmailApplicationTests.contextLoads" />
+        <item itemvalue="JUnit.MedicohealthServiceEmailApplicationTests.testSendEmail2UserChangeEmail" />
         <item itemvalue="JUnit.MedicohealthServiceEmailApplicationTests.testSendEmail2Admin" />
+        <item itemvalue="JUnit.MedicohealthServiceEmailApplicationTests.contextLoads" />
         <item itemvalue="Application.MedicohealthServiceEmailApplication" />
         <item itemvalue="JUnit.MedicohealthServiceEmailApplicationTests.showToday" />
       </list>
@@ -537,23 +625,11 @@
       <workItem from="1541146213641" duration="232000" />
       <workItem from="1541149064388" duration="918000" />
       <workItem from="1541150276188" duration="32000" />
-      <workItem from="1541150351722" duration="853000" />
+      <workItem from="1541150351722" duration="4243000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MedicohealthServiceEmailApplicationTests_contextLoads - 2018.11.02 at 14h 18m 54s.xml">
-      <configuration name="MedicohealthServiceEmailApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MedicohealthServiceEmailApplicationTests_contextLoads - 2018.11.02 at 14h 22m 47s.xml">
-      <configuration name="MedicohealthServiceEmailApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MedicohealthServiceEmailApplicationTests_contextLoads - 2018.11.02 at 14h 26m 44s.xml">
-      <configuration name="MedicohealthServiceEmailApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MedicohealthServiceEmailApplicationTests_contextLoads - 2018.11.02 at 16h 11m 37s.xml">
-      <configuration name="MedicohealthServiceEmailApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MedicohealthServiceEmailApplicationTests_contextLoads - 2018.11.02 at 16h 14m 02s.xml">
       <configuration name="MedicohealthServiceEmailApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
@@ -572,9 +648,21 @@
     <history-entry file="MedicohealthServiceEmailApplicationTests_contextLoads - 2018.11.02 at 17h 35m 48s.xml">
       <configuration name="MedicohealthServiceEmailApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="MedicohealthServiceEmailApplicationTests_contextLoads - 2018.11.02 at 17h 38m 42s.xml">
+      <configuration name="MedicohealthServiceEmailApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MedicohealthServiceEmailApplicationTests_testSendEmail2Admin - 2018.11.02 at 19h 27m 06s.xml">
+      <configuration name="MedicohealthServiceEmailApplicationTests.testSendEmail2Admin" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MedicohealthServiceEmailApplicationTests_testSendEmail2UserChangeEmail - 2018.11.02 at 19h 31m 03s.xml">
+      <configuration name="MedicohealthServiceEmailApplicationTests.testSendEmail2UserChangeEmail" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="MedicohealthServiceEmailApplicationTests_testSendEmail2UserChangeEmail - 2018.11.02 at 20h 27m 02s.xml">
+      <configuration name="MedicohealthServiceEmailApplicationTests.testSendEmail2UserChangeEmail" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27504000" />
+    <option name="totallyTimeSpent" value="30894000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
@@ -592,16 +680,16 @@
       <window_info id="UI Designer" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39977974" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32929516" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32827586" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="bottom" id="Java Enterprise" order="8" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.45931035" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.45931035" />
       <window_info anchor="bottom" id="Spring" order="8" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.34087238" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.34087238" />
       <window_info anchor="right" id="Bean Validation" order="4" />
       <window_info id="Web" order="3" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="3" />
@@ -631,40 +719,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="16" selection-start-line="20" selection-start-column="16" selection-end-line="20" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/EmailContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/MedicohealthServiceEmailApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="51" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/controller/SendEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/MedicohealthRestfulEmailApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -850,31 +904,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-common/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="31" selection-start-line="31" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/api/EmailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/test/java/com/supi/mh/email/restful/MedicohealthRestfulEmailApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="9" column="38" selection-start-line="9" selection-start-column="38" selection-end-line="9" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserRegister.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="25" selection-start-line="9" selection-start-column="25" selection-end-line="9" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -885,58 +918,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserChangeEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="11" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserChangePwd.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2Admin.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/MedicohealthRestfulEmailApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/controller/SendEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/medicohealth-dubbo-api/src/main/java/com/supi/mh/api/EmailContextService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/EmailContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="570">
-          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -947,16 +932,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/core/MailService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="840">
@@ -964,10 +939,31 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/MedicohealthServiceEmailApplication.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.0.10.RELEASE/spring-context-support-5.0.10.RELEASE.jar!/org/springframework/mail/MailSender.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="18" selection-start-line="7" selection-start-column="18" selection-end-line="7" selection-end-column="18" />
+        <state relative-caret-position="60">
+          <caret line="7" column="22" lean-forward="true" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-context-support/5.0.10.RELEASE/spring-context-support-5.0.10.RELEASE.jar!/org/springframework/mail/javamail/JavaMailSender.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="12" column="43" lean-forward="true" selection-start-line="12" selection-start-column="43" selection-end-line="12" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.6.RELEASE/spring-boot-autoconfigure-2.0.6.RELEASE.jar!/org/springframework/boot/autoconfigure/mail/MailSenderPropertiesConfiguration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="52" column="5" lean-forward="true" selection-start-line="52" selection-start-column="5" selection-end-line="52" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/core/MailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -976,19 +972,113 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="23" column="44" lean-forward="true" selection-start-line="23" selection-start-column="44" selection-end-line="23" selection-end-column="44" />
+        <state relative-caret-position="254">
+          <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-common/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="76">
+          <caret line="22" column="21" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/MedicohealthRestfulEmailApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/api/EmailService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="6" selection-start-line="9" selection-start-column="6" selection-end-line="9" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/EmailContext.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="16" selection-end-line="29" selection-end-column="29" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/controller/SendEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-72">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/MedicohealthServiceEmailApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/test/java/com/supi/mh/email/service/MedicohealthServiceEmailApplicationTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="28" column="32" lean-forward="true" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
+        <state relative-caret-position="135">
+          <caret line="40" column="13" selection-start-line="40" selection-start-column="13" selection-end-line="40" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#672#673#0" expanded="true" />
-            <element signature="e#749#750#0" expanded="true" />
+            <element signature="e#791#792#0" expanded="true" />
+            <element signature="e#864#865#0" expanded="true" />
+            <element signature="e#1059#1060#0" expanded="true" />
+            <element signature="e#1116#1117#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserChangePwd.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserRegister.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="152">
+          <caret line="18" column="7" lean-forward="true" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2UserChangeEmail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="151">
+          <caret line="29" column="67" selection-start-line="29" selection-start-column="67" selection-end-line="29" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2Admin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-utils/src/main/java/utils/RandomCode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="17" column="26" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
+          <folding>
+            <element signature="e#631#632#0" expanded="true" />
+            <element signature="e#669#670#0" expanded="true" />
+            <element signature="e#856#857#0" expanded="true" />
+            <element signature="e#898#899#0" expanded="true" />
           </folding>
         </state>
       </provider>

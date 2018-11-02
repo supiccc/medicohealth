@@ -18,17 +18,17 @@ public class EmailContext implements EmailContextService {
     @Qualifier("2Admin")
     private EmailService sendEmail2Admin;
 
-//    @Autowired
-//    @Qualifier("2UserChangeEmail")
-//    private EmailService sendEmail2UserChangeEmail;
-//
-//    @Autowired
-//    @Qualifier("2UserChangePwd")
-//    private EmailService sendEmail2UserChangePwd;
-//
-//    @Autowired
-//    @Qualifier("2UserRegister")
-//    private EmailService sendEmail2UserRegister;
+    @Autowired
+    @Qualifier("2UserChangeEmail")
+    private EmailService sendEmail2UserChangeEmail;
+
+    @Autowired
+    @Qualifier("2UserChangePwd")
+    private EmailService sendEmail2UserChangePwd;
+
+    @Autowired
+    @Qualifier("2UserRegister")
+    private EmailService sendEmail2UserRegister;
 
     // 策略模式
     @Override
@@ -37,17 +37,17 @@ public class EmailContext implements EmailContextService {
             case "toAdmin":
                 emailService = sendEmail2Admin;
                 break;
-//            case "toChangePwd":
-////                emailService = new SendEmail2UserChangePwd();  mmp，spring 不要用new，会导致无法注入
-//                emailService = sendEmail2UserChangePwd;
-//                break;
-//            case "toChangeEmail":
-////                emailService = new SendEmail2UserChangeEmail();
-//                emailService = sendEmail2UserChangeEmail;
-//            case "toRegister":
-////                emailService = new SendEmail2UserRegister();
-//                emailService = sendEmail2UserRegister;
-//                break;
+            case "toChangePwd":
+//                emailService = new SendEmail2UserChangePwd();  mmp，spring 不要用new，会导致无法注入
+                emailService = sendEmail2UserChangePwd;
+                break;
+            case "toChangeEmail":
+//                emailService = new SendEmail2UserChangeEmail();
+                emailService = sendEmail2UserChangeEmail;
+            case "toRegister":
+//                emailService = new SendEmail2UserRegister();
+                emailService = sendEmail2UserRegister;
+                break;
         }
     }
 

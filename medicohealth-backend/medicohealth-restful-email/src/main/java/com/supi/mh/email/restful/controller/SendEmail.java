@@ -15,10 +15,34 @@ public class SendEmail {
     @Reference(version = "1.0.0")
     EmailContextService e;
 
-    @RequestMapping(value = "/sendtoAdmin", method = RequestMethod.POST)
+    @RequestMapping(value = "/toadmin", method = RequestMethod.POST)
     public String send2Admin(String content) {
         e.getIntance("toAdmin");
         e.sendto("", content);
-        return "Ok";
+        return "OK";
+    }
+
+    @RequestMapping(value = "/changeemail", method = RequestMethod.POST)
+    public String send2UserChangeEmail() {
+        String email = "";
+        e.getIntance("2UserChangeEmail");
+        e.sendto(email, "");
+        return "OK";
+    }
+
+    @RequestMapping(value = "changepwd", method = RequestMethod.GET)
+    public String send2UserChangePwd() {
+        String email = "";
+        e.getIntance("2UserChangePwd");
+        e.sendto(email, "");
+        return "OK";
+    }
+
+    @RequestMapping(value = "register", method = RequestMethod.GET)
+    public String send2UserRegister() {
+        String email = "";
+        e.getIntance("2UserRegister");
+        e.sendto(email, "");
+        return "OK";
     }
 }
