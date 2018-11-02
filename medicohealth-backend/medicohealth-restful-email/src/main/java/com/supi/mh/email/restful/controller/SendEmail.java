@@ -3,6 +3,7 @@ package com.supi.mh.email.restful.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.supi.mh.api.EmailContextService;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -14,10 +15,10 @@ public class SendEmail {
     @Reference(version = "1.0.0")
     EmailContextService e;
 
-    @RequestMapping(value = "/sendtoAdmin")
-    public String send2Admin(String email, String subject, String mode) {
+    @RequestMapping(value = "/sendtoAdmin", method = RequestMethod.POST)
+    public String send2Admin(String content) {
         e.getIntance("toAdmin");
-        e.sendto(email, 0, subject, mode);
+        e.sendto("", content);
         return "Ok";
     }
 }

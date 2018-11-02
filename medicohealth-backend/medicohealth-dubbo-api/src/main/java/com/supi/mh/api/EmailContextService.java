@@ -13,10 +13,8 @@ public interface EmailContextService {
     /**
      *
      * @param email
-     * @param randomCode
-     * @param subject
-     * @param mode
+     * @param content
      * @return
      */
-    int sendto(String email, int randomCode, String subject, String mode);
+    int sendto(String email, String content);
 }

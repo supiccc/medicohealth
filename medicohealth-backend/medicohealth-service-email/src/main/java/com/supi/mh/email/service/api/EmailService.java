@@ -6,14 +6,11 @@ package com.supi.mh.email.service.api;
  */
 public interface EmailService {
 
-
     /**
      *
-     * @param email 邮箱地址
-     * @param randomCode 验证码
-     * @param subject 邮件主题
-     * @param mode 邮件类型
-     * @return 错误码
+     * @param email
+     * @param content
+     * @return
      */
-    int sendto(String email, int randomCode, String subject, String mode);
+    int sendto(String email, String content);
 }

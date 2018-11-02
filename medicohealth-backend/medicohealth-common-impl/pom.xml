@@ -17,7 +17,6 @@
     <packaging>pom</packaging>
     <modules>
         <module>medicohealth-common-utils</module>
-        <module>medicohealth-common-email</module>
     </modules>
 
 
