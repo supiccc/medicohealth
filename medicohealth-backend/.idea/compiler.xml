@@ -7,9 +7,12 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="medicohealth-common" />
+        <module name="medicohealth-common-entity" />
         <module name="medicohealth-common-utils" />
         <module name="medicohealth-dubbo-api" />
+        <module name="medicohealth-restful-app" />
         <module name="medicohealth-restful-email" />
+        <module name="medicohealth-security-shiro" />
         <module name="medicohealth-service-email" />
         <module name="medicohealth-service-mybatis" />
       </profile>

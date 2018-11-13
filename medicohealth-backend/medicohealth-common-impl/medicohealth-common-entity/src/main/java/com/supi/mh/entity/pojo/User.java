@@ -1,4 +1,4 @@
-package com.supi.mh.service.mybatis.pojo;
+package com.supi.mh.entity.pojo;
 
 public class User {
     private Integer iduser;
