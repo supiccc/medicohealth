@@ -15,6 +15,7 @@ public class SendEmail {
     @Reference(version = "1.0.0")
     EmailContextService e;
 
+
     @RequestMapping(value = "/toadmin", method = RequestMethod.POST)
     public String send2Admin(String content) {
         e.getIntance("toAdmin");
@@ -23,8 +24,7 @@ public class SendEmail {
     }
 
     @RequestMapping(value = "/changeemail", method = RequestMethod.POST)
-    public String send2UserChangeEmail() {
-        String email = "";
+    public String send2UserChangeEmail(String email) {
         e.getIntance("2UserChangeEmail");
         e.sendto(email, "");
         return "OK";
@@ -32,6 +32,7 @@ public class SendEmail {
 
     @RequestMapping(value = "changepwd", method = RequestMethod.GET)
     public String send2UserChangePwd() {
+//        自动获取用户邮箱
         String email = "";
         e.getIntance("2UserChangePwd");
         e.sendto(email, "");

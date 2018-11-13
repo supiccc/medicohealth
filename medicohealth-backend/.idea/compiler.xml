@@ -11,6 +11,7 @@
         <module name="medicohealth-dubbo-api" />
         <module name="medicohealth-restful-email" />
         <module name="medicohealth-service-email" />
+        <module name="medicohealth-service-mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

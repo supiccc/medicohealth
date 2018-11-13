@@ -1,6 +1,7 @@
 package com.supi.mh.email.service.impl;
 
 import com.alibaba.dubbo.config.annotation.Service;
+import com.alibaba.dubbo.validation.MethodValidated;
 import com.supi.mh.api.EmailContextService;
 import com.supi.mh.email.service.api.EmailService;
 import org.springframework.beans.factory.annotation.Autowired;

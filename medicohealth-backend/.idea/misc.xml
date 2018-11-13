@@ -7,6 +7,7 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-service-email/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-restful-email/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
