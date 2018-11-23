@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="medicohealth-cas-server" />
         <module name="medicohealth-common" />
         <module name="medicohealth-common-entity" />
         <module name="medicohealth-common-log4j" />
