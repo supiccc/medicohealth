@@ -13,7 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping(value = "/email/v1")
 public class SendEmail {
     @Reference(version = "1.0.0")
-    EmailContextService e;
+    private EmailContextService e;
 
 
     @RequestMapping(value = "/toadmin", method = RequestMethod.POST)

@@ -12,9 +12,9 @@ public interface EmailContextService {
 
     /**
      *
-     * @param email
-     * @param content
-     * @return
+     * @param email 邮件地址
+     * @param content 邮件内容
+     * @return 状态码
      */
     int sendto(String email, String content);
 }

@@ -1,6 +1,8 @@
 package com.supi.mh.entity.pojo;
 
-public class User {
+import java.io.Serializable;
+
+public class User implements Serializable {
     private Integer iduser;
 
     private String username;

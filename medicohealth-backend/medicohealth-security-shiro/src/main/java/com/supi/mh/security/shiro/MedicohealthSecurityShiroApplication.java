@@ -8,5 +8,6 @@ public class MedicohealthSecurityShiroApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(MedicohealthSecurityShiroApplication.class, args);
+        SpringApplication.run(MedicohealthSecurityShiroApplication.class, args);
     }
 }

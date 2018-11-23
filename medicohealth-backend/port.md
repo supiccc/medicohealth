@@ -7,3 +7,5 @@
 8003: medicohealth-service-mybatis
 
 8004: medicohealth-restful-app
+
+8005: medicohealth-security-shiro

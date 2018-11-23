@@ -1,7 +1,9 @@
 package com.supi.mh.service.mybatis.dao;
 
-import com.supi.mh.service.mybatis.pojo.User;
+import com.supi.mh.entity.pojo.User;
+import org.springframework.stereotype.Repository;
 
+@Repository
 public interface UserMapper {
     int deleteByPrimaryKey(Integer iduser);
 

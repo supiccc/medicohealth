@@ -15,10 +15,11 @@
 
     <artifactId>medicohealth-common-impl</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>medicohealth-common-utils</module>
         <module>medicohealth-common-entity</module>
+        <module>medicohealth-common-log4j</module>
     </modules>
-
 
 </project>
