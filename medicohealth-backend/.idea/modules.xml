@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-security-shiro.iml" filepath="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-security-shiro.iml" />
+      <module fileurl="file://$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/medicohealth-shiro-client.iml" filepath="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/medicohealth-shiro-client.iml" />
+    </modules>
+  </component>
+</project>

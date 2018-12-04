@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: medicohealth-shiro-cas
+  thymeleaf:
+    cache: true # Enable template caching.
+    check-template: true # Check that the template exists before rendering it.
+    check-template-location: true # Check that the templates location exists.
+    content-type: text/html # Content-Type value.
+    enabled: true # Enable MVC Thymeleaf view resolution.
+    encoding: UTF-8 # Template encoding.
+    mode: HTML5 # Template mode to be applied to templates. See also StandardTemplateModeHandlers.
+    prefix: classpath:/templates/ # Prefix that gets prepended to view names when building a URL.
+    suffix: .html
+  aop:
+    proxy-target-class: true
+cas:
+  prefixUrl: https://localhost:8443/cas
+  loginUrl: ${cas.prefixUrl}/login
+  serviceUrl: http://localhost:${server.port}
+  callbackUrl: ${cas.serviceUrl}/callback
+jwt:
+  salt: 12345678901234567890123456789012
+
+
+
+

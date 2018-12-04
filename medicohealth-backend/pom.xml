@@ -18,6 +18,7 @@
         <module>medicohealth-dubbo-api</module>
         <module>medicohealth-common-impl</module>
         <module>medicohealth-security-cas</module>
+        <module>medicohealth-security-shiro</module>
     </modules>
 
 

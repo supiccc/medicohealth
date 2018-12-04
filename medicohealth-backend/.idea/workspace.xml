@@ -22,6 +22,10 @@
     <ignored path="$PROJECT_DIR$/medicohealth-security-cas/target/" />
     <ignored path="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/medicohealth-cas-server/target/" />
     <ignored path="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/target/" />
+    <ignored path="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-cas/target/" />
+    <ignored path="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/target/" />
+    <ignored path="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/medicohealth-shiro-cas/target/" />
+    <ignored path="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -31,29 +35,88 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/application.properties">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="85" column="2" lean-forward="true" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="2" />
+            <state relative-caret-position="349">
+              <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="log4j2.xml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/log4j2.xml">
+      <file leaf-file-name="log4j2.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources/log4j2.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="73">
-              <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
+            <state relative-caret-position="390">
+              <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messages_zh_CN.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources/messages_zh_CN.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-426">
+              <caret line="8" column="83" lean-forward="true" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15">
+              <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="39" />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/pom.xml">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file leaf-file-name="user-details.properties" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources/user-details.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
+            <state relative-caret-position="195">
+              <caret line="13" column="122" lean-forward="true" selection-start-line="13" selection-start-column="122" selection-end-line="13" selection-end-column="122" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmailContextService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-dubbo-api/src/main/java/com/supi/mh/api/EmailContextService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="491">
+              <caret line="91" column="29" lean-forward="true" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="shiro.ini" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/shiro.ini">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="6" selection-start-column="6" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/medicohealth-common/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -68,59 +131,64 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>SecurityManager</find>
+    </findStrings>
+  </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/EmailContext.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/SendEmail2Admin.java" />
-        <option value="$PROJECT_DIR$/medicohealth-restful-email/src/test/java/com/supi/mh/email/restful/MedicohealthRestfulEmailApplicationTests.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/java/com/supi/mh/service/mybatis/druid/DruidConfiguration.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/java/com/supi/mh/service/mybatis/druid/DruidStatFilter.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/java/com/supi/mh/service/mybatis/druid/DruidStatViewServlet.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-entity/src/main/java/com/supi/mh/entity/poji/User.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources/generator/generatorConfig.xml" />
-        <option value="$PROJECT_DIR$/medicohealth-dubbo-api/src/main/java/com/supi/mh/api/EmailContextService.java" />
-        <option value="$PROJECT_DIR$/medicohealth-restful-email/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/medicohealth-common-impl/pom.xml" />
-        <option value="$PROJECT_DIR$/medicohealth-dubbo-api/pom.xml" />
-        <option value="$PROJECT_DIR$/medicohealth-dubbo-api/src/main/java/com/supi/mh/api/mybatis/UserService.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/java/com/supi/mh/service/mybatis/dao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/test/java/com/supi/mh/service/mybatis/MedicohealthServiceMybatisApplicationTests.java" />
-        <option value="$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/controller/SendEmail.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/java/com/supi/mh/service/mybatis/impl/UserTest.java" />
-        <option value="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-log4j/pom.xml" />
-        <option value="$PROJECT_DIR$/medicohealth-service-email/pom.xml" />
-        <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/MedicohealthServiceEmailApplication.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/pom.xml" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/java/com/supi/mh/service/mybatis/MedicohealthServiceMybatisApplication.java" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources/application.yml" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/java/com/supi/mh/service/mybatis/impl/UserServiceImpl.java" />
-        <option value="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-entity/src/main/java/com/supi/mh/entity/pojo/User.java" />
         <option value="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-log4j/src/main/resources/log4j.properties" />
         <option value="$PROJECT_DIR$/medicohealth-dubbo-api/src/main/java/com/supi/mh/api/shiro/ShiroService.java" />
-        <option value="$PROJECT_DIR$/medicohealth-common/pom.xml" />
         <option value="$PROJECT_DIR$/port.md" />
-        <option value="$PROJECT_DIR$/medicohealth-restful-app/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/medicohealth-security-shiro/src/main/java/com/supi/mh/security/shiro/realm/AuthRealm.java" />
         <option value="$PROJECT_DIR$/medicohealth-security-shiro/src/main/java/com/supi/mh/security/shiro/credentials/CredentialsMatcher.java" />
-        <option value="$PROJECT_DIR$/medicohealth-security-shiro/pom.xml" />
-        <option value="$PROJECT_DIR$/medicohealth-restful-app/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-security-shiro/src/main/java/com/supi/mh/security/shiro/MedicohealthSecurityShiroApplication.java" />
         <option value="$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/config.java" />
-        <option value="$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/MedicohealthRestfulAppApplication.java" />
         <option value="$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/handler/ShiroSvc.java" />
-        <option value="$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/controller/LoginController.java" />
         <option value="$PROJECT_DIR$/medicohealth-service-email/src/main/resources/application.properties" />
-        <option value="$PROJECT_DIR$/medicohealth-restful-email/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/MedicohealthRestfulEmailApplication.java" />
         <option value="$PROJECT_DIR$/medicohealth-security-shiro/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/medicohealth-security-shiro/src/main/java/com/supi/mh/security/shiro/config/shiroConfiguration.java" />
-        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/log4j2.xml" />
-        <option value="$PROJECT_DIR$/medicohealth-security-cas/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/.gitignore" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-cas/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-cas/src/main/java/com/supi/mh/security/shiro/cas/config/shiroConfiguration.java" />
+        <option value="$PROJECT_DIR$/medicohealth-restful-email/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-entity/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-log4j/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-utils/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/medicohealth-shiro-cas/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/MedicohealthRestfulAppApplication.java" />
+        <option value="$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/medicohealth-restful-app/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/medicohealth-shiro-cas/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/medicohealth-restful-app/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/controller/CasController.java" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/medicohealth-shiro-cas/src/main/java/com/supi/mh/shiro/cas/config/shiroConfiguration.java" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/log4j2.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-service-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/shiro.ini" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/etc/cas/config/application.yml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/services/Localhost-10000002.json" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management/src/main/resources/user-details.properties" />
+        <option value="$USER_HOME$/Downloads/medicohealth-cas-management/medicohealth-cas-management/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management/build.sh" />
+        <option value="$PROJECT_DIR$/medicohealth-common-impl/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/pom.xml" />
+        <option value="$PROJECT_DIR$/.idea/modules.xml" />
+        <option value="$PROJECT_DIR$/.idea/compiler.xml" />
+        <option value="$PROJECT_DIR$/.idea/workspace.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-common/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources/application.properties" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources/user-details.properties" />
         <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/application.properties" />
       </list>
     </option>
@@ -140,7 +208,17 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
-      <expand />
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="medicohealth-cas-mangement" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="medicohealth-cas-mangement" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
       <select />
     </treeState>
   </component>
@@ -154,12 +232,12 @@
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
+      <flattenPackages ProjectPane="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="AndroidView" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -170,12 +248,61 @@
             <path>
               <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
               <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-common" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
               <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-cas-mangement" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
+              <item name="overlays" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
+              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
+              <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -190,29 +317,31 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.44073278" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
     <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/medicohealth-security-cas" />
+      <recent name="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources/generator" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.supi.mh.email.api" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources" />
-      <recent name="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources" />
-      <recent name="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-log4j/src/main/resources" />
-      <recent name="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/java/com/supi/mh/service/mybatis/druid" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.supi.mh.security.shiro.config" />
       <recent name="com.supi.mh.entity.poji" />
       <recent name="com.supi.mh.email.api" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources" />
       <recent name="$PROJECT_DIR$/medicohealth-security-cas" />
-      <recent name="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources/generator" />
+      <recent name="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/medicohealth-shiro-cas/src/main/resources" />
+      <recent name="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources" />
+      <recent name="$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -227,7 +356,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.MedicohealthSecurityShiroApplication">
+  <component name="RunManager" selected="Spring Boot.MedicohealthRestfulAppApplication">
     <configuration name="MedicohealthRestfulAppApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.supi.mh.restful.app.MedicohealthRestfulAppApplication" />
       <module name="medicohealth-restful-app" />
@@ -246,17 +375,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.supi.mh.email.restful.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-    </configuration>
-    <configuration name="MedicohealthSecurityShiroApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.supi.mh.security.shiro.MedicohealthSecurityShiroApplication" />
-      <module name="medicohealth-security-shiro" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.supi.mh.security.shiro.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -337,9 +455,9 @@
         </option>
       </MavenSettings>
     </configuration>
-    <configuration name="MedicohealthCasServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="medicohealth-cas-server" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.supi.medicohealth.cas.server.MedicohealthCasServerApplication" />
+    <configuration name="MedicohealthCasMangementApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="medicohealth-cas-mangement" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.supi.mh.cas.mangement.MedicohealthCasMangementApplication" />
     </configuration>
     <configuration name="MedicohealthRestfulAppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="medicohealth-restful-app" />
@@ -362,9 +480,18 @@
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.supi.mh.email.service.MedicohealthServiceEmailApplication" />
       <option name="ALTERNATIVE_JRE_PATH" />
     </configuration>
+    <configuration name="MedicohealthServiceEmailApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="medicohealth-service-email" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.supi.mh.email.service.MedicohealthServiceEmailApplication" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+    </configuration>
     <configuration name="MedicohealthServiceMybatisApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="medicohealth-service-mybatis" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.supi.mh.service.mybatis.MedicohealthServiceMybatisApplication" />
+    </configuration>
+    <configuration name="MedicohealthShiroCasApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="medicohealth-shiro-cas" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.supi.mh.shiro.cas.MedicohealthShiroCasApplication" />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -391,23 +518,22 @@
     <list>
       <item itemvalue="Application.MedicohealthRestfulEmailApplication" />
       <item itemvalue="Maven.Mybatis-generator" />
-      <item itemvalue="Spring Boot.MedicohealthServiceEmailApplication" />
       <item itemvalue="Spring Boot.MedicohealthRestfulEmailApplication" />
       <item itemvalue="Spring Boot.MedicohealthRestfulAppApplication" />
-      <item itemvalue="Spring Boot.MedicohealthServiceEmailApplication (1)" />
+      <item itemvalue="Spring Boot.MedicohealthServiceEmailApplication" />
       <item itemvalue="Spring Boot.MedicohealthServiceMybatisApplication" />
-      <item itemvalue="Spring Boot.MedicohealthCasServerApplication" />
+      <item itemvalue="Spring Boot.MedicohealthServiceEmailApplication (1)" />
+      <item itemvalue="Spring Boot.MedicohealthShiroCasApplication" />
       <item itemvalue="Application.MedicohealthServiceEmailApplication" />
       <item itemvalue="Application.MedicohealthRestfulAppApplication" />
       <item itemvalue="Application.MedicohealthServiceMybatisApplication" />
-      <item itemvalue="Application.MedicohealthSecurityShiroApplication" />
+      <item itemvalue="Spring Boot.MedicohealthCasMangementApplication" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.MedicohealthServiceEmailApplication" />
         <item itemvalue="Application.MedicohealthRestfulAppApplication" />
         <item itemvalue="Application.MedicohealthServiceMybatisApplication" />
-        <item itemvalue="Application.MedicohealthSecurityShiroApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -456,7 +582,16 @@
       <workItem from="1542985965698" duration="120000" />
       <workItem from="1542986267133" duration="3022000" />
       <workItem from="1542993118422" duration="214000" />
-      <workItem from="1542993375335" duration="2564000" />
+      <workItem from="1542993375335" duration="9842000" />
+      <workItem from="1543198104509" duration="5654000" />
+      <workItem from="1543906193484" duration="1262000" />
+      <workItem from="1543907655163" duration="1747000" />
+      <workItem from="1543909476368" duration="7677000" />
+      <workItem from="1543923020653" duration="8746000" />
+      <workItem from="1543934347708" duration="192000" />
+      <workItem from="1543934544349" duration="1558000" />
+      <workItem from="1543936244514" duration="1692000" />
+      <workItem from="1543945457390" duration="3288000" />
     </task>
     <servers />
   </component>
@@ -493,15 +628,15 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95191000" />
+    <option name="totallyTimeSpent" value="134285000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1920" height="1005" extended-state="6" />
+    <frame x="0" y="22" width="1920" height="1005" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="right" id="Maven Projects" order="9" weight="0.32956383" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" weight="0.32961783" />
+      <window_info anchor="right" id="Maven Projects" order="9" weight="0.3290735" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info id="Capture Tool" order="7" />
       <window_info id="Designer" order="2" />
@@ -515,19 +650,19 @@
       <window_info id="Image Layers" order="3" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31277534" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31369427" />
       <window_info anchor="bottom" id="Spring" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32819384" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22523962" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36894274" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.23056443" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Favorites" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32643312" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32643312" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="right" id="CDI" order="10" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -536,10 +671,9 @@
     <layout-to-restore>
       <window_info id="Designer" order="2" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.31369427" />
       <window_info anchor="bottom" id="Spring" order="11" />
       <window_info id="Image Layers" order="3" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31369427" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="4" />
@@ -547,26 +681,27 @@
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.32819384" />
       <window_info id="Capture Tool" order="7" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
-      <window_info anchor="right" id="CDI" order="10" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32643312" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="right" id="Maven Projects" order="9" weight="0.32956383" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32935324" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.22523962" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32643312" />
+      <window_info anchor="right" id="Database" order="5" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
       <window_info anchor="right" id="Theme Preview" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="CDI" order="10" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39900497" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32935324" />
       <window_info anchor="right" id="Bean Validation" order="8" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39900497" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -586,329 +721,305 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/logs/medicohealth.log">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/log4j2.xml" />
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/medicohealth-shiro-cas/src/main/java/com/supi/mh/shiro/cas/config/shiroConfiguration.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3092" />
+        <state relative-caret-position="-2231">
+          <caret line="8" column="44" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="44" />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-log4j/src/main/resources/log4j.properties">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/java/com/supi/medicohealth/cas/server/MedicohealthCasServerApplication.java" />
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-shiro/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-dubbo-api/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/jdbc/Driver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/mysql/mysql-connector-java/8.0.13/mysql-connector-java-8.0.13.jar!/com/mysql/cj/jdbc/Driver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-entity/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-334" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources/application.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="36" selection-start-line="50" selection-start-column="36" selection-end-line="50" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources/generator/generatorConfig.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="85" selection-start-line="5" selection-start-column="79" selection-end-line="5" selection-end-column="85" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/etc/cas/config/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/etc/cas/config/cas.properties">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-mybatis/src/main/java/com/supi/mh/service/mybatis/impl/UserServiceImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-dubbo-api/src/main/java/com/supi/mh/api/shiro/ShiroService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-app/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/Account.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/realm/AuthorizingRealm.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="123" column="9" lean-forward="true" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/AuthenticationToken.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="9" column="17" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-core/1.3.2/shiro-core-1.3.2.jar!/org/apache/shiro/authc/AuthenticationInfo.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-shiro/src/main/java/com/supi/mh/security/shiro/credentials/CredentialsMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="59" selection-start-line="15" selection-start-column="59" selection-end-line="15" selection-end-column="59" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/medicohealth-service-mybatis/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="610">
-          <caret line="61" selection-start-line="61" selection-end-line="61" />
+        <state relative-caret-position="475">
+          <caret line="98" column="43" selection-start-line="98" selection-start-column="43" selection-end-line="98" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/log4j2.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="103" column="41" selection-start-line="103" selection-start-column="41" selection-end-line="103" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/controller/CasController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="55" column="14" selection-start-line="55" selection-start-column="14" selection-end-line="55" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/medicohealth-restful-app/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+        <state relative-caret-position="380">
+          <caret line="70" column="20" selection-start-line="70" selection-start-column="20" selection-end-line="70" selection-end-column="20" />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/apache/shiro/shiro-web/1.4.0/shiro-web-1.4.0.jar!/org/apache/shiro/web/servlet/ShiroFilter.class">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/services/Localhost-10000005.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="60">
+          <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/config.java">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/mvnw">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+        <state>
+          <caret column="1" selection-start-column="1" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-shiro/src/main/java/com/supi/mh/security/shiro/realm/AuthRealm.java">
+    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3/lib/maven-model-builder-3.3.9.jar!/org/apache/maven/model/pom-4.0.0.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="34" column="128" selection-start-line="34" selection-start-column="104" selection-end-line="34" selection-end-column="128" />
+        <state relative-caret-position="385">
+          <caret line="53" column="15" selection-start-line="53" selection-start-column="15" selection-end-line="53" selection-end-column="15" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/handler/ShiroSvc.java">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/build.sh">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="237">
-          <caret line="17" column="16" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+        <state relative-caret-position="510">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/MedicohealthRestfulAppApplication.java">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management/src/main/resources/user-details.properties" />
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apereo/cas/cas-management-webapp/5.1.3/cas-management-webapp-5.1.3.war!/WEB-INF/classes/bootstrap.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#271#272#0" expanded="true" />
-            <element signature="e#355#356#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="270">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-app/src/main/java/com/supi/mh/restful/app/controller/LoginController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/apereo/cas/cas-management-webapp/5.1.3/cas-management-webapp-5.1.3.war!/WEB-INF/classes/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="40" column="21" selection-start-line="40" selection-start-column="21" selection-end-line="40" selection-end-column="21" />
+        <state relative-caret-position="330">
+          <caret line="22" column="60" selection-start-line="22" selection-start-column="60" selection-end-line="22" selection-end-column="60" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-mybatis/src/main/java/com/supi/mh/service/mybatis/MedicohealthServiceMybatisApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" selection-start-line="7" selection-end-line="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/impl/EmailContext.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="59" selection-start-line="59" selection-end-line="59" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/MedicohealthRestfulEmailApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="9" selection-start-line="9" selection-end-line="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#450#451#0" expanded="true" />
-            <element signature="e#536#537#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/src/main/java/com/supi/mh/email/restful/controller/SendEmail.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="18" column="37" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management/pom.xml" />
     <entry file="file://$PROJECT_DIR$/port.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="150">
-            <caret line="10" column="33" selection-start-line="10" selection-start-column="33" selection-end-line="10" selection-end-column="33" />
-          </first_editor>
+          <first_editor />
           <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-shiro/src/main/java/com/supi/mh/security/shiro/MedicohealthSecurityShiroApplication.java">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management/src/main/resources/application.properties" />
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management/build.sh" />
+    <entry file="file://$PROJECT_DIR$/medicohealth-common-impl/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-backend.iml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/compiler.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/uiDesigner.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1423" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="13" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" selection-start-line="5" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/java/com/supi/mh/cas/mangement/MedicohealthCasMangementApplication.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-shiro/src/main/java/com/supi/mh/security/shiro/config/shiroConfiguration.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="19" selection-start-line="24" selection-start-column="19" selection-end-line="24" selection-end-column="19" />
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources/services/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor />
+          <second_editor />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-email/src/main/java/com/supi/mh/email/service/MedicohealthServiceEmailApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="14" selection-start-line="14" selection-end-line="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-shiro/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1155">
-          <caret line="77" column="34" selection-start-line="77" selection-start-column="34" selection-end-line="77" selection-end-column="34" />
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-log4j/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/medicohealth-common/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="22" column="44" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+        <state relative-caret-position="255">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/etc/cas/config/cas.properties">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+        <state relative-caret-position="349">
+          <caret line="24" column="40" selection-start-line="24" selection-start-column="40" selection-end-line="24" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-shiro/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/shiro.ini">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="24" lean-forward="true" selection-start-line="23" selection-start-column="24" selection-end-line="23" selection-end-column="24" />
+        <state>
+          <caret column="6" selection-start-column="6" selection-end-column="6" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-restful-email/pom.xml">
+    <entry file="file://$PROJECT_DIR$/medicohealth-dubbo-api/src/main/java/com/supi/mh/api/EmailContextService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" selection-start-line="27" selection-end-line="36" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/java/com/supi/medicohealth/cas/server/ServletInitializer.java" />
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/java/com/supi/medicohealth/cas/server/MedicohealthCasServerApplication.java" />
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/build.sh">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="26" column="20" selection-start-line="26" selection-start-column="20" selection-end-line="26" selection-end-column="20" />
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="4" selection-end-column="3" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources/log4j2.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" selection-start-line="8" selection-end-line="8" selection-end-column="30" />
+        <state relative-caret-position="390">
+          <caret line="26" column="40" selection-start-line="26" selection-start-column="40" selection-end-line="26" selection-end-column="40" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/pom.xml">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources/messages_zh_CN.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="660">
-          <caret line="44" column="20" selection-start-line="44" selection-start-column="20" selection-end-line="44" selection-end-column="20" />
+        <state relative-caret-position="-426">
+          <caret line="8" column="83" lean-forward="true" selection-start-line="8" selection-start-column="83" selection-end-line="8" selection-end-column="83" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-service-mybatis/src/main/resources/application.properties">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="14" column="27" lean-forward="true" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
+        <state relative-caret-position="15">
+          <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="1" selection-end-column="39" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/.gitignore">
+    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/src/main/resources/user-details.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="675">
-          <caret line="45" column="41" lean-forward="true" selection-start-line="45" selection-start-column="41" selection-end-line="45" selection-end-column="41" />
+        <state relative-caret-position="195">
+          <caret line="13" column="122" lean-forward="true" selection-start-line="13" selection-start-column="122" selection-end-line="13" selection-end-column="122" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/cas.log.dir/cas-2018-11-23-23-1.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/cas.log.dir/cas-2018-11-24-01-1.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/cas.log.dir/cas-2018-11-24-01-2.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/cas.log.dir/cas-2018-11-24-01-3.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/cas.log.dir/cas_audit.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/cas-2018-11-24-01-2.log">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/cas-2018-11-24-01-1.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/cas.log.dir/cas-2018-11-24-01-4.log">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="85" column="2" lean-forward="true" selection-start-line="85" selection-start-column="2" selection-end-line="85" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="44" column="26" lean-forward="true" selection-start-line="44" selection-start-column="26" selection-end-line="44" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/log4j2.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="73">
-          <caret line="69" column="67" selection-start-line="69" selection-start-column="67" selection-end-line="69" selection-end-column="67" />
+        <state relative-caret-position="491">
+          <caret line="91" column="29" lean-forward="true" selection-start-line="91" selection-start-column="29" selection-end-line="91" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -966,11 +1077,11 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>medicohealth-common-parent</last-edited>
+          <last-edited>medicohealth-security-shiro</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
-                <option value="0.2" />
+                <option value="0.44073278" />
               </list>
             </option>
           </splitter-proportions>
@@ -990,7 +1101,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
-          <last-edited>Maven: ch.qos.logback:logback-classic:1.2.3</last-edited>
+          <last-edited>Maven: org.apache.shiro:shiro-crypto-cipher:1.4.0</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

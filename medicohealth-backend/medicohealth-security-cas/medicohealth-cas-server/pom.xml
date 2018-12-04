@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
@@ -9,14 +9,13 @@
         <version>1.0-SNAPSHOT</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
-
     <artifactId>medicohealth-cas-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>medicohealth-cas-server</name>
-    <description> CAS WAR Overlay allows you to download a pre-built vanilla CAS web application server provided and override/insert specific behavior into it.
-</description>
+    <description>CAS web application server</description>
+
 
     <dependencies>
 
@@ -24,22 +23,29 @@
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-webapp-tomcat</artifactId>
             <version>${cas.version}</version>
+            <!--记得修改这里-->
             <type>war</type>
             <scope>runtime</scope>
         </dependency>
 
+        <!--新增支持jdbc验证-->
+        <!-- Database Authentication Begin -->
         <dependency>
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-support-jdbc</artifactId>
             <version>${cas.version}</version>
         </dependency>
-
         <dependency>
             <groupId>org.apereo.cas</groupId>
             <artifactId>cas-server-support-jdbc-drivers</artifactId>
             <version>${cas.version}</version>
         </dependency>
-
+        <!-- Database Authentication End -->
+        <dependency>
+            <groupId>org.apereo.cas</groupId>
+            <artifactId>cas-server-support-generic</artifactId>
+            <version>${cas.version}</version>
+        </dependency>
     </dependencies>
 
     <dependencyManagement>
@@ -52,7 +58,6 @@
                 <scope>import</scope>
             </dependency>
         </dependencies>
-
     </dependencyManagement>
 
     <build>
@@ -85,7 +90,9 @@
                     <recompressZippedFiles>false</recompressZippedFiles>
                     <archive>
                         <compress>false</compress>
-                        <manifestFile>${project.build.directory}/war/work/org.apereo.cas/cas-server-webapp-tomcat/META-INF/MANIFEST.MF</manifestFile>
+                        <manifestFile>
+                            ${project.build.directory}/war/work/org.apereo.cas/cas-server-webapp-tomcat/META-INF/MANIFEST.MF
+                        </manifestFile>
                     </archive>
                     <overlays>
                         <overlay>
@@ -93,6 +100,10 @@
                             <artifactId>cas-server-webapp-tomcat</artifactId>
                         </overlay>
                     </overlays>
+                    <dependentWarExcludes>
+                        <!--war 包下的服务不进行初始化-->
+                        **/services/*.json
+                    </dependentWarExcludes>
                 </configuration>
             </plugin>
             <plugin>
@@ -170,38 +181,5 @@
             <!--</snapshots>-->
         <!--</repository>-->
     <!--</repositories>-->
-
-	
-    <profiles>
-        <!--<profile>-->
-            <!--<activation>-->
-                <!--<activeByDefault>false</activeByDefault>-->
-            <!--</activation>-->
-            <!--<id>pgp</id>-->
-            <!--<build>-->
-                <!--<plugins>-->
-                    <!--<plugin>-->
-                        <!--<groupId>com.github.s4u.plugins</groupId>-->
-                        <!--<artifactId>pgpverify-maven-plugin</artifactId>-->
-                        <!--<version>1.1.0</version>-->
-                        <!--<executions>-->
-                            <!--<execution>-->
-                                <!--<goals>-->
-                                    <!--<goal>check</goal>-->
-                                <!--</goals>-->
-                            <!--</execution>-->
-                        <!--</executions>-->
-                        <!--<configuration>-->
-                            <!--<pgpKeyServer>hkp://pool.sks-keyservers.net</pgpKeyServer>-->
-                            <!--<pgpKeysCachePath>${settings.localRepository}/pgpkeys-cache</pgpKeysCachePath>-->
-                            <!--<scope>test</scope>-->
-                            <!--<verifyPomFiles>true</verifyPomFiles>-->
-                            <!--<failNoSignature>false</failNoSignature>-->
-                        <!--</configuration>-->
-                    <!--</plugin>-->
-                <!--</plugins>-->
-            <!--</build>-->
-        <!--</profile>-->
-    </profiles>	
 
 </project>

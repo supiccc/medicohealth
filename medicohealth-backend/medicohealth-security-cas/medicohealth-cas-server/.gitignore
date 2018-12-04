@@ -41,6 +41,3 @@ bin/
 *.log.gz
 out/
 MANIFEST.MF
-
-### 敏感信息
-src/main/resources/application.properties

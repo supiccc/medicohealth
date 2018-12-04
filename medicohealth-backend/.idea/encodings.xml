@@ -11,8 +11,11 @@
     <file url="file://$PROJECT_DIR$/medicohealth-restful-app" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/medicohealth-restful-email" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/medicohealth-security-cas" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/medicohealth-security-shiro" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/medicohealth-shiro-cas" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/medicohealth-service-email" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/medicohealth-service-mybatis" charset="UTF-8" />
   </component>

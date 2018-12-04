@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="medicohealth-cas-mangement" />
         <module name="medicohealth-cas-server" />
         <module name="medicohealth-common" />
         <module name="medicohealth-common-entity" />
@@ -14,13 +15,15 @@
         <module name="medicohealth-dubbo-api" />
         <module name="medicohealth-restful-app" />
         <module name="medicohealth-restful-email" />
-        <module name="medicohealth-security-shiro" />
         <module name="medicohealth-service-email" />
         <module name="medicohealth-service-mybatis" />
+        <module name="medicohealth-shiro-cas" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="medicohealth-common-email" target="1.5" />
+      <module name="medicohealth-security-shiro" target="1.5" />
+      <module name="medicohealth-shiro-client" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

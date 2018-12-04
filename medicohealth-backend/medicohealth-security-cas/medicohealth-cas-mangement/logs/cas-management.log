@@ -1,0 +1,38 @@
+2018-12-05 02:29:06,333 INFO [org.apereo.cas.mgmt.web.CasManagementWebApplication] - No active profile set, falling back to default profiles: default
+2018-12-05 02:29:28,015 WARN [org.apereo.cas.config.CasCoreServicesConfiguration] - Runtime memory is used as the persistence storage for retrieving and persisting service definitions. Changes that are made to service definitions during runtime WILL be LOST upon container restarts.
+2018-12-05 02:29:28,044 INFO [org.apereo.cas.services.ServiceRegistryInitializer] - The service registry database will not be initialized from default JSON services. If the service registry database ends up empty, CAS will refuse to authenticate services until service definitions are added to the registry. To auto-initialize the service registry, set 'cas.serviceRegistry.initFromJson=true' in your CAS settings.
+2018-12-05 02:29:32,559 INFO [org.apereo.cas.services.DefaultServicesManager] - Loaded [0] service(s) from [InMemoryServiceRegistry].
+2018-12-05 02:29:33,062 INFO [org.apereo.cas.mgmt.web.CasManagementWebApplication] - Started CasManagementWebApplication in 30.734 seconds (JVM running for 32.821)
+2018-12-05 02:29:52,928 INFO [org.apereo.cas.services.DefaultServicesManager] - Loaded [0] service(s) from [InMemoryServiceRegistry].
+2018-12-05 02:30:14,264 INFO [org.pac4j.core.profile.ProfileHelper] - Building user profile based on typedId: admin
+2018-12-05 02:30:14,322 INFO [org.apereo.cas.services.DefaultServicesManager] - Loaded [0] service(s) from [InMemoryServiceRegistry].
+2018-12-05 02:30:14,438 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: id=1,name=Services Management Web Application,description=Services Management Web Application,serviceId=^http://localhost:8081/cas-management/manage.html,usernameAttributeProvider=org.apereo.cas.services.DefaultRegisteredServiceUsernameProvider@d,theme=<null>,evaluationOrder=0,logoutType=BACK_CHANNEL,attributeReleasePolicy=org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy@245f5748[attributeFilter=<null>,principalAttributesRepository=org.apereo.cas.authentication.principal.DefaultPrincipalAttributesRepository@44089188[],authorizedToReleaseCredentialPassword=false,authorizedToReleaseProxyGrantingTicket=false,excludeDefaultAttributes=false,principalIdAttribute=<null>,allowedAttributes=[]],accessStrategy=org.apereo.cas.services.DefaultRegisteredServiceAccessStrategy@5072366c[enabled=true,ssoEnabled=true,requireAllAttributes=true,requiredAttributes={},unauthorizedRedirectUrl=<null>,caseInsensitive=false,rejectedAttributes={}],publicKey=<null>,proxyPolicy=org.apereo.cas.services.RefuseRegisteredServiceProxyPolicy@1a4d1f21,logo=<null>,logoutUrl=<null>,requiredHandlers=[],properties={},multifactorPolicy=org.apereo.cas.services.DefaultRegisteredServiceMultifactorPolicy@4472b4b1[multifactorAuthenticationProviders=[],failureMode=CLOSED,principalAttributeNameTrigger=<null>,principalAttributeValueToMatch=<null>,bypassEnabled=false],informationUrl=<null>,privacyUrl=<null>,<null>
+ACTION: SAVE_SERVICE_SUCCESS
+APPLICATION: CAS_Management
+WHEN: Wed Dec 05 02:30:14 CST 2018
+CLIENT IP ADDRESS: 0:0:0:0:0:0:0:1
+SERVER IP ADDRESS: 0:0:0:0:0:0:0:1
+=============================================================
+
+
+2018-12-05 02:30:14,438 INFO [org.apereo.inspektr.audit.support.Slf4jLoggingAuditTrailManager] - Audit trail record BEGIN
+=============================================================
+WHO: admin
+WHAT: id=1,name=Services Management Web Application,description=Services Management Web Application,serviceId=^http://localhost:8081/cas-management/manage.html,usernameAttributeProvider=org.apereo.cas.services.DefaultRegisteredServiceUsernameProvider@d,theme=<null>,evaluationOrder=0,logoutType=BACK_CHANNEL,attributeReleasePolicy=org.apereo.cas.services.ReturnAllowedAttributeReleasePolicy@245f5748[attributeFilter=<null>,principalAttributesRepository=org.apereo.cas.authentication.principal.DefaultPrincipalAttributesRepository@44089188[],authorizedToReleaseCredentialPassword=false,authorizedToReleaseProxyGrantingTicket=false,excludeDefaultAttributes=false,principalIdAttribute=<null>,allowedAttributes=[]],accessStrategy=org.apereo.cas.services.DefaultRegisteredServiceAccessStrategy@5072366c[enabled=true,ssoEnabled=true,requireAllAttributes=true,requiredAttributes={},unauthorizedRedirectUrl=<null>,caseInsensitive=false,rejectedAttributes={}],publicKey=<null>,proxyPolicy=org.apereo.cas.services.RefuseRegisteredServiceProxyPolicy@1a4d1f21,logo=<null>,logoutUrl=<null>,requiredHandlers=[],properties={},multifactorPolicy=org.apereo.cas.services.DefaultRegisteredServiceMultifactorPolicy@4472b4b1[multifactorAuthenticationProviders=[],failureMode=CLOSED,principalAttributeNameTrigger=<null>,principalAttributeValueToMatch=<null>,bypassEnabled=false],informationUrl=<null>,privacyUrl=<null>,<null>
+ACTION: SAVE_SERVICE_SUCCESS
+APPLICATION: CAS_Management
+WHEN: Wed Dec 05 02:30:14 CST 2018
+CLIENT IP ADDRESS: 0:0:0:0:0:0:0:1
+SERVER IP ADDRESS: 0:0:0:0:0:0:0:1
+=============================================================
+
+
+2018-12-05 02:30:14,441 INFO [org.apereo.cas.services.DefaultServicesManager] - Loaded [1] service(s) from [InMemoryServiceRegistry].
+2018-12-05 02:30:14,466 INFO [org.apereo.cas.services.DefaultServicesManager] - Loaded [1] service(s) from [InMemoryServiceRegistry].
+2018-12-05 02:30:18,057 INFO [org.apereo.cas.services.DefaultServicesManager] - Loaded [1] service(s) from [InMemoryServiceRegistry].
+2018-12-05 02:30:52,944 INFO [org.apereo.cas.services.DefaultServicesManager] - Loaded [1] service(s) from [InMemoryServiceRegistry].
+2018-12-05 02:31:03,456 INFO [org.apereo.cas.services.DefaultServicesManager] - Loaded [1] service(s) from [InMemoryServiceRegistry].
+2018-12-05 02:31:24,074 INFO [org.apereo.cas.services.DefaultServicesManager] - Loaded [1] service(s) from [InMemoryServiceRegistry].

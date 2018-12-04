@@ -2,7 +2,11 @@
 <project version="4">
   <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="FrameworkDetectionExcludesConfiguration">
+    <file url="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management/overlays" />
+    <file url="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/overlays" />
     <file url="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/overlays" />
+    <file type="web" url="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management" />
+    <file type="web" url="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement" />
     <file type="web" url="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server" />
   </component>
   <component name="MavenProjectsManager">
@@ -13,12 +17,19 @@
         <option value="$PROJECT_DIR$/medicohealth-restful-email/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-service-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-restful-app/pom.xml" />
-        <option value="$PROJECT_DIR$/medicohealth-security-shiro/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/medicohealth-shiro-cas/pom.xml" />
+        <option value="$USER_HOME$/Downloads/medicohealth-cas-management/medicohealth-cas-management/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/medicohealth-common-impl/medicohealth-common-email/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-management/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-cas/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/pom.xml" />
       </set>
     </option>
   </component>

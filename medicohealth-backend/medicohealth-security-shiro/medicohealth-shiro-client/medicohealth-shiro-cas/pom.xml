@@ -4,17 +4,17 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.supi</groupId>
-    <artifactId>medicohealth-restful-email</artifactId>
+    <artifactId>medicohealth-shiro-cas</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>medicohealth-restful-email</name>
-    <description>MedicoHealth Restful emai api</description>
+    <name>medicohealth-shiro-cas</name>
+    <description>Demo project for Spring Boot</description>
 
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.0.6.RELEASE</version>
+        <version>2.1.0.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
@@ -36,30 +36,37 @@
             <scope>test</scope>
         </dependency>
 
-        <!--Spring Boot dubbo 依赖-->
         <dependency>
-            <groupId>com.alibaba.boot</groupId>
-            <artifactId>dubbo-spring-boot-starter</artifactId>
-            <version>0.2.0</version>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring-boot-web-starter</artifactId>
         </dependency>
 
         <dependency>
-            <groupId>com.supi</groupId>
-            <artifactId>medicohealth-common</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>io.buji</groupId>
+            <artifactId>buji-pac4j</artifactId>
+            <version>3.0.0</version>
         </dependency>
-
         <dependency>
-            <groupId>com.supi</groupId>
-            <artifactId>medicohealth-dubbo-api</artifactId>
-            <version>1.0-SNAPSHOT</version>
+            <groupId>org.pac4j</groupId>
+            <artifactId>pac4j-cas</artifactId>
+            <version>2.1.0</version>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>com.supi</groupId>-->
-            <!--<artifactId>medicohealth-security-shiro</artifactId>-->
-            <!--<version>0.0.1-SNAPSHOT</version>-->
-        <!--</dependency>-->
+        <dependency>
+            <groupId>org.pac4j</groupId>
+            <artifactId>pac4j-jwt</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.pac4j</groupId>
+            <artifactId>pac4j-http</artifactId>
+            <version>2.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>RELEASE</version>
+            <scope>compile</scope>
+        </dependency>
     </dependencies>
 
     <build>
