@@ -89,8 +89,8 @@
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="84" column="40" lean-forward="true" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+            <state relative-caret-position="-173">
+              <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -239,60 +239,6 @@
               <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
               <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
               <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="Tomcat" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="medicohealth-backend" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-security-cas" type="462c0819:PsiDirectoryNode" />
-              <item name="medicohealth-cas-server" type="462c0819:PsiDirectoryNode" />
-              <item name="build" type="462c0819:PsiDirectoryNode" />
-              <item name="tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="work" type="462c0819:PsiDirectoryNode" />
-              <item name="Tomcat" type="462c0819:PsiDirectoryNode" />
-              <item name="localhost" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="medicohealth-backend" type="b2602c69:ProjectViewProjectNode" />
@@ -623,7 +569,7 @@
       <workItem from="1543934544349" duration="1558000" />
       <workItem from="1543936244514" duration="1692000" />
       <workItem from="1543945457390" duration="8333000" />
-      <workItem from="1544004327766" duration="1143000" />
+      <workItem from="1544004327766" duration="1419000" />
     </task>
     <servers />
   </component>
@@ -660,7 +606,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="140473000" />
+    <option name="totallyTimeSpent" value="140749000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1280" height="725" extended-state="6" />
@@ -684,8 +630,8 @@
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.42993632" />
       <window_info anchor="bottom" id="Spring" order="11" />
-      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3678344" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28917608" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3678344" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28917608" />
       <window_info anchor="right" id="Bean Validation" order="8" />
       <window_info id="Web" order="6" side_tool="true" />
       <window_info anchor="right" id="Theme Preview" order="7" />
@@ -1103,8 +1049,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="84" column="40" lean-forward="true" selection-start-line="84" selection-start-column="40" selection-end-line="84" selection-end-column="40" />
+        <state relative-caret-position="-173">
+          <caret line="80" column="45" selection-start-line="80" selection-start-column="45" selection-end-line="80" selection-end-column="45" />
         </state>
       </provider>
     </entry>
