@@ -21,6 +21,7 @@
         <option value="$USER_HOME$/Downloads/medicohealth-cas-management/medicohealth-cas-management/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-security-cas/pom.xml" />
         <option value="$PROJECT_DIR$/medicohealth-security-cas/medicohealth-cas-mangement/pom.xml" />
+        <option value="$PROJECT_DIR$/medicohealth-security-shiro/medicohealth-shiro-client/medicohealth-shiro-pac4j/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">

@@ -18,6 +18,7 @@
         <module name="medicohealth-service-email" />
         <module name="medicohealth-service-mybatis" />
         <module name="medicohealth-shiro-cas" />
+        <module name="medicohealth-shiro-pac4j" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>

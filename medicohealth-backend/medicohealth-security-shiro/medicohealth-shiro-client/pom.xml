@@ -12,6 +12,10 @@
     <artifactId>medicohealth-shiro-client</artifactId>
     <packaging>pom</packaging>
 
+    <modules>
+        <module>medicohealth-shiro-cas</module>
+        <module>medicohealth-shiro-pac4j</module>
+    </modules>
 
 
 </project>

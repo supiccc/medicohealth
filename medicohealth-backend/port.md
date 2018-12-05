@@ -9,3 +9,5 @@
 8004: medicohealth-restful-app
 
 8005: medicohealth-security-shiro
+
+8006: medicohealth-shiro-pac4j

@@ -27,33 +27,33 @@ import java.util.Optional;
 @RestController
 @RequestMapping("/login/v1")
 public class CasController {
-    @Autowired
-    private JwtGenerator generator;
-
-    @Autowired
-    private CasRestFormClient casRestFormClient;
-
-    @Value("${cas.serviceUrl}")
-    private String serviceUrl;
-
-    @RequestMapping("/user/login")
-    public Object login(HttpServletRequest request, HttpServletResponse response) {
-        Map<String, Object> model = new HashMap<>();
-        J2EContext context = new J2EContext(request, response);
-        final ProfileManager<CasRestProfile> manager = new ProfileManager(context);
-        final Optional<CasRestProfile> profile = manager.get(true);
-        //获取ticket
-        TokenCredentials tokenCredentials = casRestFormClient.requestServiceTicket(serviceUrl, profile.get(), context);
-        //根据ticket获取用户信息
-        final CasProfile casProfile = casRestFormClient.validateServiceTicket(serviceUrl, tokenCredentials, context);
-        //生成jwt token
-        String token = generator.generate(casProfile);
-        model.put("token", token);
-        return new HttpEntity<>(model);
-    }
-
-    @GetMapping("/user/{id}")
-    public Object user(@PathVariable(value = "id") String id) {
-        return "users page:" + id;
-    }
+//    @Autowired
+//    private JwtGenerator generator;
+//
+//    @Autowired
+//    private CasRestFormClient casRestFormClient;
+//
+//    @Value("${cas.serviceUrl}")
+//    private String serviceUrl;
+//
+//    @RequestMapping("/user/login")
+//    public Object login(HttpServletRequest request, HttpServletResponse response) {
+//        Map<String, Object> model = new HashMap<>();
+//        J2EContext context = new J2EContext(request, response);
+//        final ProfileManager<CasRestProfile> manager = new ProfileManager(context);
+//        final Optional<CasRestProfile> profile = manager.get(true);
+//        //获取ticket
+//        TokenCredentials tokenCredentials = casRestFormClient.requestServiceTicket(serviceUrl, profile.get(), context);
+//        //根据ticket获取用户信息
+//        final CasProfile casProfile = casRestFormClient.validateServiceTicket(serviceUrl, tokenCredentials, context);
+//        //生成jwt token
+//        String token = generator.generate(casProfile);
+//        model.put("token", token);
+//        return new HttpEntity<>(model);
+//    }
+//
+//    @GetMapping("/user/{id}")
+//    public Object user(@PathVariable(value = "id") String id) {
+//        return "users page:" + id;
+//    }
 }
