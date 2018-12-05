@@ -26,6 +26,7 @@ import java.util.Optional;
  */
 @RestController
 public class login {
+
     @Autowired
     private JwtGenerator generator;
 

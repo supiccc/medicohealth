@@ -1,1 +1,2 @@
 medicohealth-backend/medicohealth-service-mybatis/src/main/resources/generator
+medicohealth-backend/medicohealth-security-cas/medicohealth-cas-server/src/main/resources/application.properties
