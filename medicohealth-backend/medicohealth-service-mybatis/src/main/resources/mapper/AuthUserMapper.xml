@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.supi.mh.service.mybatis.dao.AuthUserMapper" >
+  <resultMap id="BaseResultMap" type="com.supi.mh.entity.pojo.AuthUser" >
+    <id column="user_id" property="userId" jdbcType="INTEGER" />
+    <result column="auth_username" property="authUsername" jdbcType="VARCHAR" />
+    <result column="auth_phone" property="authPhone" jdbcType="VARCHAR" />
+    <result column="auth_password" property="authPassword" jdbcType="VARCHAR" />
+    <result column="auth_salt" property="authSalt" jdbcType="VARCHAR" />
+    <result column="auth_createtime" property="authCreatetime" jdbcType="TIMESTAMP" />
+    <result column="auth_role_role_id" property="authRoleRoleId" jdbcType="INTEGER" />
+    <result column="is_validity" property="isValidity" jdbcType="TINYINT" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    user_id, auth_username, auth_phone, auth_password, auth_salt, auth_createtime, auth_role_role_id, 
+    is_validity
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from auth_user
+    where user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from auth_user
+    where user_id = #{userId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.supi.mh.entity.pojo.AuthUser" >
+    insert into auth_user (user_id, auth_username, auth_phone, 
+      auth_password, auth_salt, auth_createtime, 
+      auth_role_role_id, is_validity)
+    values (#{userId,jdbcType=INTEGER}, #{authUsername,jdbcType=VARCHAR}, #{authPhone,jdbcType=VARCHAR}, 
+      #{authPassword,jdbcType=VARCHAR}, #{authSalt,jdbcType=VARCHAR}, #{authCreatetime,jdbcType=TIMESTAMP}, 
+      #{authRoleRoleId,jdbcType=INTEGER}, #{isValidity,jdbcType=TINYINT})
+  </insert>
+  <insert id="insertSelective" parameterType="com.supi.mh.entity.pojo.AuthUser" >
+    insert into auth_user
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        user_id,
+      </if>
+      <if test="authUsername != null" >
+        auth_username,
+      </if>
+      <if test="authPhone != null" >
+        auth_phone,
+      </if>
+      <if test="authPassword != null" >
+        auth_password,
+      </if>
+      <if test="authSalt != null" >
+        auth_salt,
+      </if>
+      <if test="authCreatetime != null" >
+        auth_createtime,
+      </if>
+      <if test="authRoleRoleId != null" >
+        auth_role_role_id,
+      </if>
+      <if test="isValidity != null" >
+        is_validity,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="userId != null" >
+        #{userId,jdbcType=INTEGER},
+      </if>
+      <if test="authUsername != null" >
+        #{authUsername,jdbcType=VARCHAR},
+      </if>
+      <if test="authPhone != null" >
+        #{authPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="authPassword != null" >
+        #{authPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="authSalt != null" >
+        #{authSalt,jdbcType=VARCHAR},
+      </if>
+      <if test="authCreatetime != null" >
+        #{authCreatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="authRoleRoleId != null" >
+        #{authRoleRoleId,jdbcType=INTEGER},
+      </if>
+      <if test="isValidity != null" >
+        #{isValidity,jdbcType=TINYINT},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.supi.mh.entity.pojo.AuthUser" >
+    update auth_user
+    <set >
+      <if test="authUsername != null" >
+        auth_username = #{authUsername,jdbcType=VARCHAR},
+      </if>
+      <if test="authPhone != null" >
+        auth_phone = #{authPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="authPassword != null" >
+        auth_password = #{authPassword,jdbcType=VARCHAR},
+      </if>
+      <if test="authSalt != null" >
+        auth_salt = #{authSalt,jdbcType=VARCHAR},
+      </if>
+      <if test="authCreatetime != null" >
+        auth_createtime = #{authCreatetime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="authRoleRoleId != null" >
+        auth_role_role_id = #{authRoleRoleId,jdbcType=INTEGER},
+      </if>
+      <if test="isValidity != null" >
+        is_validity = #{isValidity,jdbcType=TINYINT},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.supi.mh.entity.pojo.AuthUser" >
+    update auth_user
+    set auth_username = #{authUsername,jdbcType=VARCHAR},
+      auth_phone = #{authPhone,jdbcType=VARCHAR},
+      auth_password = #{authPassword,jdbcType=VARCHAR},
+      auth_salt = #{authSalt,jdbcType=VARCHAR},
+      auth_createtime = #{authCreatetime,jdbcType=TIMESTAMP},
+      auth_role_role_id = #{authRoleRoleId,jdbcType=INTEGER},
+      is_validity = #{isValidity,jdbcType=TINYINT}
+    where user_id = #{userId,jdbcType=INTEGER}
+  </update>
+  <select id="findByUserName" resultMap="BaseResultMap" parameterType="java.lang.String">
+    select
+    <include refid="Base_Column_List" />
+    from auth_user where auth_username = #{username};
+  </select>
+</mapper>

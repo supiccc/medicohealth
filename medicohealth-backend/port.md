@@ -11,3 +11,9 @@
 8005: medicohealth-security-shiro
 
 8006: medicohealth-shiro-pac4j
+
+错误码
+---
+0：成功
+1：密码错误
+2：用户名错误

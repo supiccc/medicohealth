@@ -21,20 +21,26 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+import static java.lang.System.err;
+
 /**
  * Created by supiccc on 2018-12-05 16:11
  */
 @RestController
 public class login {
 
-    @Autowired
-    private JwtGenerator generator;
+    private final JwtGenerator generator;
 
-    @Autowired
-    private CasRestFormClient casRestFormClient;
+    private final CasRestFormClient casRestFormClient;
 
     @Value("${cas.serviceUrl}")
     private String serviceUrl;
+
+    @Autowired
+    public login(CasRestFormClient casRestFormClient, JwtGenerator generator) {
+        this.casRestFormClient = casRestFormClient;
+        this.generator = generator;
+    }
 
     @GetMapping("/")
     public Object index() {
@@ -64,6 +70,7 @@ public class login {
         //生成jwt token
         String token = generator.generate(casProfile);
         model.put("token", token);
+        err.println(token);
         return new HttpEntity<>(model);
     }
 

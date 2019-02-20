@@ -11,13 +11,13 @@ import org.springframework.stereotype.Service;
  */
 @Service
 public class ShiroSvc {
-    public String hello() {
-        return "hello world";
-    }
-
-    public void login(String username, String password) throws AuthenticationException {
-        Subject subject = SecurityUtils.getSubject();
-        UsernamePasswordToken utoken = new UsernamePasswordToken(username, password);
-        subject.login(utoken);
-    }
+//    public String hello() {
+//        return "hello world";
+//    }
+//
+//    public void login(String username, String password) throws AuthenticationException {
+//        Subject subject = SecurityUtils.getSubject();
+//        UsernamePasswordToken utoken = new UsernamePasswordToken(username, password);
+//        subject.login(utoken);
+//    }
 }
