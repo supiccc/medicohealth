@@ -34,13 +34,11 @@
           <img src="../assets/user.jpg" alt="" style="border-radius: 3px;vertical-align: middle;">
           <span> {{ "欢迎您，" + this.getUser }}</span> 
           <span class="caret"></span>
-        </a>
-        <m-dropdown-panel>
+        </a>    
+        <m-dropdown-panel v-loading="this.loading">
           <m-dropdown-item>用户信息</m-dropdown-item>
           <m-dropdown-item>修改密码</m-dropdown-item>
-          <m-dropdown-item>注销</m-dropdown-item>
-          <div class="test-line"></div>
-          <m-dropdown-item name="login">退出账号</m-dropdown-item>
+          <m-dropdown-item><a @click.stop="toLogout">退出账号</a></m-dropdown-item>
         </m-dropdown-panel>
       </m-dropdown>
     </m-nav-item>
@@ -82,7 +80,7 @@
 </m-navbar>
 </template>
 <script type="text/javascript">
-import {mapGetters} from 'vuex'
+import {mapGetters, mapActions} from 'vuex'
 import {
   requestFullScreen,
   exitFullscreen
@@ -97,11 +95,12 @@ export default {
       themes,
       themeType: '',
       showAside: true,
-      theme: {theme: {headerTheme: 'info'}}
+      theme: {theme: {headerTheme: 'info'}},
+      loading: false
     }
   },
   computed: {
-      ...mapGetters(['getUser', 'getRole'])
+      ...mapGetters(['getUser', 'getRole', 'getToken'])
   },
   watch: {
     themeType (val) {
@@ -111,7 +110,7 @@ export default {
     }
   },
   methods: {
-    // ...mapActions(['getLoginUser', 'logout']),
+    ...mapActions(['logout']),
     handleSwitchSide () {
       this.mini = !this.mini
       this.$emit('switch', this.mini)
@@ -128,6 +127,33 @@ export default {
     handleSwitchHideSide () {
       console.log('change')
       this.$emit('hide-side')
+    },
+    toLogout () {
+      this.loading = true
+      this.$axios
+      .post('http://localhost:8004/auth/v2/logout',
+      {
+        'token': this.getToken
+      },
+      {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        },
+        transformRequest: [function (data) {
+          let ret = ''
+          for (let it in data) {
+            ret += encodeURIComponent(it) + '=' + encodeURIComponent(data[it]) + '&'
+          }
+          return ret
+        }]
+      })
+      .then(response => {
+          this.loading = false;
+          this.logout();
+          this.$message.success("您已成功退出账号");
+          this.$router.push({name: "login"});
+      })
+      .catch(error => this.$message.warning("操作未能完成，请稍后再试"))
     }
   },
   created () {

@@ -43,6 +43,14 @@ export default new Router({
             title: '统计'
           },
           component: () => import('@/components/LineUser.vue')
+        },
+        {
+          path: '/hospital',
+          name: 'hospital',
+          meta: {
+            title: '机构管理'
+          },
+          component: () => import('@/components/TableHospital.vue')
         }
       ]
     },

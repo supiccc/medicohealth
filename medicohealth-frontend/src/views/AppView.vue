@@ -108,7 +108,7 @@ export default {
   }
   .app-header-logo-box .header-logo{
     height: 42px;
-    margin-top: -17px;
+    margin-top: -12px;
     margin-right: 5px;
     vertical-align: middle;
   }

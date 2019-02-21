@@ -48,6 +48,15 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    
+    logout: state => {
+      state.user = null
+      state.isLogin = false
+      state.role = null
+      state.token = null
+      sessionStorage.removeItem('token')
+      sessionStorage.removeItem('user')
+      sessionStorage.removeItem('role')
+      sessionStorage.removeItem('isLogin')
+    }
   }
 })

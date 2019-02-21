@@ -18,7 +18,8 @@ const menus = [
           {
             id: '4',
             label: '机构管理',
-            icon: 'fa fa-hospital-o'
+            icon: 'fa fa-hospital-o',
+            path: '/hospital'
           }
         ]
     },

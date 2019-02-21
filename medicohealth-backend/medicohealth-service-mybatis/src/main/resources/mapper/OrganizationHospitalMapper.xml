@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.supi.mh.service.mybatis.dao.OrganizationHospitalMapper" >
+  <resultMap id="BaseResultMap" type="com.supi.mh.entity.pojo.OrganizationHospital" >
+    <id column="hospital_id" property="hospitalId" jdbcType="INTEGER" />
+    <result column="hospital_name" property="hospitalName" jdbcType="VARCHAR" />
+    <result column="hospital_phone" property="hospitalPhone" jdbcType="VARCHAR" />
+    <result column="hospital_address_country" property="hospitalAddressCountry" jdbcType="VARCHAR" />
+    <result column="hospital_address_province" property="hospitalAddressProvince" jdbcType="VARCHAR" />
+    <result column="hospital_address_city" property="hospitalAddressCity" jdbcType="VARCHAR" />
+    <result column="hospital_address_district" property="hospitalAddressDistrict" jdbcType="VARCHAR" />
+    <result column="hospital_address_street" property="hospitalAddressStreet" jdbcType="VARCHAR" />
+    <result column="hospital_address_more" property="hospitalAddressMore" jdbcType="VARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    hospital_id, hospital_name, hospital_phone, hospital_address_country, hospital_address_province, 
+    hospital_address_city, hospital_address_district, hospital_address_street, hospital_address_more
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from organization_hospital
+    where hospital_id = #{hospitalId,jdbcType=INTEGER}
+  </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    <include refid="Base_Column_List" />
+    from organization_hospital
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from organization_hospital
+    where hospital_id = #{hospitalId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.supi.mh.entity.pojo.OrganizationHospital" >
+    insert into organization_hospital (hospital_id, hospital_name, hospital_phone, 
+      hospital_address_country, hospital_address_province, 
+      hospital_address_city, hospital_address_district, 
+      hospital_address_street, hospital_address_more
+      )
+    values (#{hospitalId,jdbcType=INTEGER}, #{hospitalName,jdbcType=VARCHAR}, #{hospitalPhone,jdbcType=VARCHAR}, 
+      #{hospitalAddressCountry,jdbcType=VARCHAR}, #{hospitalAddressProvince,jdbcType=VARCHAR}, 
+      #{hospitalAddressCity,jdbcType=VARCHAR}, #{hospitalAddressDistrict,jdbcType=VARCHAR}, 
+      #{hospitalAddressStreet,jdbcType=VARCHAR}, #{hospitalAddressMore,jdbcType=VARCHAR}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.supi.mh.entity.pojo.OrganizationHospital" >
+    insert into organization_hospital
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="hospitalId != null" >
+        hospital_id,
+      </if>
+      <if test="hospitalName != null" >
+        hospital_name,
+      </if>
+      <if test="hospitalPhone != null" >
+        hospital_phone,
+      </if>
+      <if test="hospitalAddressCountry != null" >
+        hospital_address_country,
+      </if>
+      <if test="hospitalAddressProvince != null" >
+        hospital_address_province,
+      </if>
+      <if test="hospitalAddressCity != null" >
+        hospital_address_city,
+      </if>
+      <if test="hospitalAddressDistrict != null" >
+        hospital_address_district,
+      </if>
+      <if test="hospitalAddressStreet != null" >
+        hospital_address_street,
+      </if>
+      <if test="hospitalAddressMore != null" >
+        hospital_address_more,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="hospitalId != null" >
+        #{hospitalId,jdbcType=INTEGER},
+      </if>
+      <if test="hospitalName != null" >
+        #{hospitalName,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalPhone != null" >
+        #{hospitalPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressCountry != null" >
+        #{hospitalAddressCountry,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressProvince != null" >
+        #{hospitalAddressProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressCity != null" >
+        #{hospitalAddressCity,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressDistrict != null" >
+        #{hospitalAddressDistrict,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressStreet != null" >
+        #{hospitalAddressStreet,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressMore != null" >
+        #{hospitalAddressMore,jdbcType=VARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.supi.mh.entity.pojo.OrganizationHospital" >
+    update organization_hospital
+    <set >
+      <if test="hospitalName != null" >
+        hospital_name = #{hospitalName,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalPhone != null" >
+        hospital_phone = #{hospitalPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressCountry != null" >
+        hospital_address_country = #{hospitalAddressCountry,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressProvince != null" >
+        hospital_address_province = #{hospitalAddressProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressCity != null" >
+        hospital_address_city = #{hospitalAddressCity,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressDistrict != null" >
+        hospital_address_district = #{hospitalAddressDistrict,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressStreet != null" >
+        hospital_address_street = #{hospitalAddressStreet,jdbcType=VARCHAR},
+      </if>
+      <if test="hospitalAddressMore != null" >
+        hospital_address_more = #{hospitalAddressMore,jdbcType=VARCHAR},
+      </if>
+    </set>
+    where hospital_id = #{hospitalId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.supi.mh.entity.pojo.OrganizationHospital" >
+    update organization_hospital
+    set hospital_name = #{hospitalName,jdbcType=VARCHAR},
+      hospital_phone = #{hospitalPhone,jdbcType=VARCHAR},
+      hospital_address_country = #{hospitalAddressCountry,jdbcType=VARCHAR},
+      hospital_address_province = #{hospitalAddressProvince,jdbcType=VARCHAR},
+      hospital_address_city = #{hospitalAddressCity,jdbcType=VARCHAR},
+      hospital_address_district = #{hospitalAddressDistrict,jdbcType=VARCHAR},
+      hospital_address_street = #{hospitalAddressStreet,jdbcType=VARCHAR},
+      hospital_address_more = #{hospitalAddressMore,jdbcType=VARCHAR}
+    where hospital_id = #{hospitalId,jdbcType=INTEGER}
+  </update>
+</mapper>

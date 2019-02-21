@@ -46,12 +46,12 @@ public class AuthController {
 
     /**
      * 注销
-     * @param username 用户名
+     * @param token 权限
      * @return code: 0 成功 1 未知错误
      */
-    @RequestMapping(value = "/logout")
-    public ResponseJson logout(String username) {
-        if (authService.logout(username)) {
+    @RequestMapping(value = "/logout", method = RequestMethod.POST)
+    public ResponseJson logout(String token) {
+        if (authService.logout(token)) {
             return new ResponseJson(0, null, null);
         } else {
             return new ResponseJson(1, null, null);

@@ -65,6 +65,7 @@ public class AuthServiceImpl implements AuthService {
 
     @Override
     public boolean logout(String token) {
+        System.err.println(token);
         return redisService.del(token);
     }
 }

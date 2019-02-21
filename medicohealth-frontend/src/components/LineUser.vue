@@ -1,5 +1,5 @@
 <template>
-    <div id="container2" style="height: 100%">
+    <div id="container2" style="height: 100%; margin: 10px 10px 10px 10px;">
     </div>
 </template>
 <script>
