@@ -802,7 +802,7 @@
       <workItem from="1550578467257" duration="4399000" />
       <workItem from="1550645043991" duration="1107000" />
       <workItem from="1550646197137" duration="73000" />
-      <workItem from="1550661623438" duration="1529000" />
+      <workItem from="1550661623438" duration="3085000" />
     </task>
     <servers />
   </component>
@@ -839,11 +839,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="188806000" />
+    <option name="totallyTimeSpent" value="190362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1920" y="196" width="1280" height="777" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50080776" side_tool="true" weight="0.3901274" />
@@ -863,7 +862,7 @@
       <window_info anchor="bottom" id="Java Enterprise" order="13" weight="0.32941177" />
       <window_info anchor="right" id="Capture Analysis" order="4" />
       <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49919224" visible="true" weight="0.33529413" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49919224" weight="0.33529413" />
       <window_info anchor="bottom" id="Spring" order="11" weight="0.32941177" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.34558824" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25605816" />

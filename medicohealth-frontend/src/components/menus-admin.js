@@ -30,17 +30,20 @@ const menus = [
           {
             id: '6',
             label: '医师统计',
-            icon: 'fa fa-pie-chart'
+            icon: 'fa fa-pie-chart',
+            path: '/pie'
           },
           {
             id: '7',
             label: '老人统计',
-            icon: 'fa fa-pie-chart'
+            icon: 'fa fa-pie-chart',
+            path: '/pie/elder'
           },
           {
             id: '8',
             label: '用户统计',
-            icon: 'fa fa-line-chart'
+            icon: 'fa fa-line-chart',
+            path: '/line'
           }
         ]
     }    

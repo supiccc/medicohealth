@@ -10,9 +10,7 @@
       ></i>
   </m-navbar-brand>
   <m-nav align="left">
-    <!--
-    <m-nav-item ><router-link to="/"><a target="_blank" class='acolor'>主页</a></router-link></m-nav-item>
-    -->
+    <m-nav-item ><router-link to="/"><a target="_blank" class='acolor'>管理员端</a></router-link></m-nav-item>
     <!--
     <m-nav-item v-if="this.getRole == 'admin'"><router-link to="/login"><a target="_blank" class='acolor'>资料管理</a></router-link></m-nav-item>
     <m-nav-item v-if="this.getRole == 'admin'"><router-link to="/login"><a target="_blank" class='acolor'>系统统计</a></router-link></m-nav-item>

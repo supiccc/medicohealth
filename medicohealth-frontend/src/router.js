@@ -19,6 +19,30 @@ export default new Router({
             title: '首页'
           },
           component: Home
+        },
+        {
+          path: '/pie',
+          name: 'pie',
+          meta: {
+            title: '统计'
+          },
+          component: () => import('@/components/PieCustom.vue')
+        },
+        {
+          path: '/pie/elder',
+          name: 'pieElder',
+          meta: {
+            title: '统计'
+          },
+          component: () => import('@/components/PieElder.vue')
+        },
+        {
+          path: '/line',
+          name: 'lineUser',
+          meta: {
+            title: '统计'
+          },
+          component: () => import('@/components/LineUser.vue')
         }
       ]
     },
