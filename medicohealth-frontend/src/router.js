@@ -9,12 +9,18 @@ export default new Router({
   base: process.env.BASE_URL,
   routes: [
     {
-      path: '/',
-      name: 'home',
-      meta: {
-        title: '首页'
-      },
-      component: Home
+      path: '',
+      component: () => import('./views/AppView.vue'),
+      children: [
+        {
+          path: '/', 
+          name:'home', 
+          meta: {
+            title: '首页'
+          },
+          component: Home
+        }
+      ]
     },
     {
       path: '/about',
