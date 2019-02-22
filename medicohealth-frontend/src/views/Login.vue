@@ -71,7 +71,7 @@ export default {
             this.setRole(response.data.data.role)
             this.setSession(response.data.data.token)
             this.info = response.data.data.token
-            this.$router.push({name: 'home', params: {user: this.username, information: this.info}})
+            this.$router.replace({name: 'home', params: {user: this.username, information: this.info}})
           } else if(response.data.code == 1) {
             this.$message.warning("密码错误")
             this.isLoging = false;
@@ -85,6 +85,8 @@ export default {
   },
   mounted() {
     if(this.$route.params.message == '未授权，请登陆授权后继续') {
+      this.$message.warning(this.$route.params.message)
+    } else if(this.$route.params.message == '您已成功退出账号') {
       this.$message.warning(this.$route.params.message)
     }
   }

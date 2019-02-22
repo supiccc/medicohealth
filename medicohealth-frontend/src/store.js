@@ -31,6 +31,16 @@ export default new Vuex.Store({
     setRole(state, role) {
       state.role = role;
       sessionStorage.setItem('role', role);
+    },
+    logout(state) {
+      state.user = null
+      state.isLogin = false
+      state.role = null
+      state.token = null
+      sessionStorage.removeItem('token')
+      sessionStorage.removeItem('user')
+      sessionStorage.removeItem('role')
+      sessionStorage.removeItem('isLogin')      
     }
   },
   getters: {
@@ -48,15 +58,5 @@ export default new Vuex.Store({
     }
   },
   actions: {
-    logout: state => {
-      state.user = null
-      state.isLogin = false
-      state.role = null
-      state.token = null
-      sessionStorage.removeItem('token')
-      sessionStorage.removeItem('user')
-      sessionStorage.removeItem('role')
-      sessionStorage.removeItem('isLogin')
-    }
   }
 })

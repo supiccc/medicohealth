@@ -1,7 +1,8 @@
 <template>
     <div class="cantainer" style="margin:20px 10px 0 10px;" >
         <el-table
-            :data="userList.slice((currentPage-1)*pagesize,currentPage*pagesize) || userList.filter(data => !search || data.name.toLowerCase().includes(search.toLowerCase()))"
+            :data="userList.filter(data => !search || data.hospitalName.toLowerCase()
+            .includes(search.toLowerCase())).slice((currentPage-1)*pagesize,currentPage*pagesize)"
             style="width: 100%" v-loading="this.loading">
             <el-table-column label="#" prop="hospitalId" width="50"></el-table-column>
             <el-table-column label="名称" prop="hospitalName" width="200"></el-table-column>
@@ -21,10 +22,12 @@
                     <el-button
                     size="mini"
                     @click="handleEdit(scope.$index, scope.row)">修改</el-button>
+                    <!--
                     <el-button
                     size="mini"
                     type="danger"
-                    @click="handleDelete(scope.$index, scope.row)">删除</el-button>
+                    @click="handleDelete(scope.$index, scope.row)">禁用</el-button>
+                    -->
                 </template>
             </el-table-column>
         </el-table>             
@@ -37,6 +40,44 @@
                 layout="total, sizes, prev, pager, next, jumper"
                 :total="this.userList.length" style="margin-top: 10px;">   
         </el-pagination>
+        <el-dialog title="修改医院信息" :visible.sync="dialogFormVisible">
+            <el-form :model="form" :rules="this.rules" ref="form">
+                <el-form-item label="医院名称" :label-width="formLabelWidth" prop="name">
+                    <el-input v-model="form.name" autocomplete="off" placeholder="必填"></el-input>
+                </el-form-item>
+                <el-form-item label="省份" :label-width="formLabelWidth" prop="province">
+
+                    <el-input v-model="form.province" autocomplete="off" placeholder="必填"></el-input>
+                    <!--
+                    <el-select v-model="province" @change="choseProvince" placeholder="省级地区">
+                    -->
+                </el-form-item>     
+                <el-form-item label="城市" :label-width="formLabelWidth" prop="city">
+                    <el-input v-model="form.city" autocomplete="off" placeholder="必填"></el-input>
+                </el-form-item>      
+                <el-form-item label="区/县" :label-width="formLabelWidth" prop="district">
+                    <el-input v-model="form.district" autocomplete="off" placeholder="必填"></el-input>
+                </el-form-item>                                                 
+                <el-form-item label="街道" :label-width="formLabelWidth" prop="street">
+                    <el-input v-model="form.street" autocomplete="off" placeholder="必填"></el-input>
+                </el-form-item>        
+                <el-form-item label="联系方式" :label-width="formLabelWidth" prop="phone">
+                    <el-input v-model="form.phone" autocomplete="off" placeholder="必填"></el-input>
+                </el-form-item>                                    
+                <!--
+                <el-form-item label="活动区域" :label-width="formLabelWidth">
+                <el-select v-model="form.region" placeholder="请选择活动区域">
+                    <el-option label="区域一" value="shanghai"></el-option>
+                    <el-option label="区域二" value="beijing"></el-option>
+                </el-select>
+                </el-form-item>
+                -->
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+            </div>
+        </el-dialog>            
     </div>
 </template>  
 <script>
@@ -47,7 +88,36 @@
                 pagesize: 10,    //    每页的数据
                 userList: [],
                 search: '',
-                loading: false
+                loading: false,
+                dialogTableVisible: false,
+                dialogFormVisible: false,
+                form: {
+                    name: '',
+                    province: '',
+                    city: '',
+                    district: '',
+                    street: '',
+                    phone: ''
+                },
+                formLabelWidth: '120px',
+                // mapJson: '@/assets/map.json'
+                rules: {
+                    name: [
+                        {required: true, message: '请输入医院名称', trigger: 'blur'}
+                    ],
+                    province: [
+                        {required: true, message: '请输入医院所在省份', trigger: 'blur'}
+                    ],
+                    city: [
+                        {required: true, message: '请输入医院所在城市', trigger: 'blur'}
+                    ],
+                    district: [
+                        {required: true, message: '请输入医院所在县/区', trigger: 'blur'}
+                    ],
+                    phone: [
+                        {required: true, message: '请输入医院联系电话', trigger: 'blur'}
+                    ]
+                }                
             }
     },
     components: {
@@ -93,23 +163,15 @@
             })
         },
         handleEdit(index, row) {
-            this.$prompt('请输入邮箱', '提示', {
-            confirmButtonText: '确定',
-            cancelButtonText: '取消',
-            inputPattern: /[\w!#$%&'*+/=?^_`{|}~-]+(?:\.[\w!#$%&'*+/=?^_`{|}~-]+)*@(?:[\w](?:[\w-]*[\w])?\.)+[\w](?:[\w-]*[\w])?/,
-            inputErrorMessage: '邮箱格式不正确'
-            }).then(({ value }) => {
-            this.$message({
-                type: 'success',
-                message: '你的邮箱是: ' + value
-            });
-            }).catch(() => {
-            this.$message({
-                type: 'info',
-                message: '取消输入'
-            });       
-            });            
-            console.log(index, row);
+            this.form = {
+                name: row.hospitalName,
+                province: row.hospitalAddressProvince,
+                city: row.hospitalAddressCity,
+                district: row.hospitalAddressDistrict,
+                street: row.hospitalAddressStreet,
+                phone: row.hospitalPhone                
+            }
+            this.dialogFormVisible = true;
         },
         handleDelete(index, row) {
             console.log(index, row);

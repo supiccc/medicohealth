@@ -10,7 +10,9 @@
       ></i>
   </m-navbar-brand>
   <m-nav align="left">
-    <m-nav-item ><router-link to="/"><a target="_blank" class='acolor'>管理员端</a></router-link></m-nav-item>
+    <m-nav-item v-if="this.getRole == 'admin'"><router-link to="/"><a target="_blank" class='acolor'>管理员端</a></router-link></m-nav-item>
+    <m-nav-item v-if="this.getRole == 'doctor'"><router-link to="/"><a target="_blank" class='acolor'>医师端</a></router-link></m-nav-item>
+    <m-nav-item v-if="this.getRole == 'elder'"><router-link to="/"><a target="_blank" class='acolor'>客户端</a></router-link></m-nav-item>
     <!--
     <m-nav-item v-if="this.getRole == 'admin'"><router-link to="/login"><a target="_blank" class='acolor'>资料管理</a></router-link></m-nav-item>
     <m-nav-item v-if="this.getRole == 'admin'"><router-link to="/login"><a target="_blank" class='acolor'>系统统计</a></router-link></m-nav-item>
@@ -38,7 +40,7 @@
         <m-dropdown-panel v-loading="this.loading">
           <m-dropdown-item>用户信息</m-dropdown-item>
           <m-dropdown-item>修改密码</m-dropdown-item>
-          <m-dropdown-item><a @click.stop="toLogout">退出账号</a></m-dropdown-item>
+          <m-dropdown-item><a @click="toLogout">退出账号</a></m-dropdown-item>
         </m-dropdown-panel>
       </m-dropdown>
     </m-nav-item>
@@ -80,7 +82,7 @@
 </m-navbar>
 </template>
 <script type="text/javascript">
-import {mapGetters, mapActions} from 'vuex'
+import {mapGetters, mapMutations} from 'vuex'
 import {
   requestFullScreen,
   exitFullscreen
@@ -110,7 +112,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['logout']),
+    ...mapMutations(['logout']),
     handleSwitchSide () {
       this.mini = !this.mini
       this.$emit('switch', this.mini)
@@ -150,8 +152,9 @@ export default {
       .then(response => {
           this.loading = false;
           this.logout();
-          this.$message.success("您已成功退出账号");
-          this.$router.push({name: "login"});
+          // this.$router.go(0)
+          // this.$message.success("您已成功退出账号");
+          this.$router.go({name: "login", params: { message: '您已成功退出账号' }});
       })
       .catch(error => this.$message.warning("操作未能完成，请稍后再试"))
     }

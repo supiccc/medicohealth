@@ -1,5 +1,5 @@
 <template>
-
+<div>
 <v-menu class="side-menu"
   v-if="this.getRole == 'admin'"
   :collapse="collapse"
@@ -10,12 +10,24 @@
   :text-color="theme.textColor"
   :active-text-color="theme.activeTextColor"
   ></v-menu>
+  <v-menu class="side-menu"
+  v-if="this.getRole == 'doctor'"
+  :collapse="collapse"
+  :default-active="defaultActive"
+  :menus="menus_doctor"
+  router
+  :background-color="theme.backgroundColor"
+  :text-color="theme.textColor"
+  :active-text-color="theme.activeTextColor"
+  ></v-menu>
+</div>
 
 </template>
 <script type="text/javascript">
 import VMenu from './vmenu'
 import menus from './menus'
 import menus_admin from './menus-admin'
+import menus_doctor from './menus-doctor'
 import {mapGetters} from 'vuex'
 export default {
   props: {
@@ -29,6 +41,7 @@ export default {
     return {
       menus,
       menus_admin,
+      menus_doctor,
       defaultActive: 'home',
       // test: 'asdfasdf'
     }
