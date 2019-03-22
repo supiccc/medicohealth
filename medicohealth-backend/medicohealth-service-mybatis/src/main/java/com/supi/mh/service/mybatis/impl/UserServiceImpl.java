@@ -4,10 +4,9 @@ import com.alibaba.dubbo.config.annotation.Service;
 import com.supi.mh.api.mybatis.UserService;
 import com.supi.mh.entity.pojo.AuthRole;
 import com.supi.mh.entity.pojo.AuthUser;
+import com.supi.mh.entity.pojo.MonitorBloodPressure;
 import com.supi.mh.entity.pojo.User;
-import com.supi.mh.service.mybatis.dao.AuthRoleMapper;
-import com.supi.mh.service.mybatis.dao.AuthUserMapper;
-import com.supi.mh.service.mybatis.dao.UserMapper;
+import com.supi.mh.service.mybatis.dao.*;
 import org.springframework.beans.factory.annotation.Autowired;
 
 /**
@@ -17,11 +16,39 @@ import org.springframework.beans.factory.annotation.Autowired;
 @Service(version = "${dubbo.application.version}")
 public class UserServiceImpl implements UserService {
 
-    @Autowired
-    AuthUserMapper userMapper;
+    private AuthUserMapper userMapper;
+
+    private AuthRoleMapper roleMapper;
+
+    private UserElderMapper userElderMapper;
+
+
+    public UserElderMapper getUserElderMapper() {
+        return userElderMapper;
+    }
 
     @Autowired
-    AuthRoleMapper roleMapper;
+    public void setUserElderMapper(UserElderMapper userElderMapper) {
+        this.userElderMapper = userElderMapper;
+    }
+
+    public AuthUserMapper getUserMapper() {
+        return userMapper;
+    }
+
+    @Autowired
+    public void setUserMapper(AuthUserMapper userMapper) {
+        this.userMapper = userMapper;
+    }
+
+    public AuthRoleMapper getRoleMapper() {
+        return roleMapper;
+    }
+
+    @Autowired
+    public void setRoleMapper(AuthRoleMapper roleMapper) {
+        this.roleMapper = roleMapper;
+    }
 
     @Override
     public AuthUser findByName(int id) {
@@ -37,5 +64,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public String findRoleNameById(Integer id) {
         return roleMapper.selectByPrimaryKey(id).getRoleName();
+    }
+
+    @Override
+    public Integer findElderIdById(Integer id) {
+        return userElderMapper.selectByUserId(id);
     }
 }

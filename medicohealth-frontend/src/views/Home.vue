@@ -36,10 +36,14 @@
     </div>
 
     <div v-if="this.getRole == 'elder'">
-      <img alt="Vue logo" src="../assets/logo.png">
+      <!--
+      <img alt="Vue logo" src="../assets/logo.png">        
       <HelloWorld msg="Welcome to Your Vue.js App" v-if='ifSeen'/>
       <p v-if='isLogin'>用户名：{{ this.getUser }}</p>
       <p v-if='isLogin'>信息：{{ this.getToken }}</p>
+      <p v-if='isLogin'>信息：{{ this.getUserId }}</p>
+      -->
+      <Monitor></Monitor>
       <!-- <p>{{ this.$router.params.password }}</p> -->
       <!--<p>{{ this.$router.params.username }}</p>-->
     </div>
@@ -48,6 +52,7 @@
       <HelloWorld msg="Welcome to Your Vue.js App" v-if='ifSeen'/>
       <p v-if='isLogin'>用户名：{{ this.getUser }}</p>
       <p v-if='isLogin'>信息：{{ this.getToken }}</p>
+      <p v-if='isLogin'>信息：{{ this.getUserId }}</p>
       <!-- <p>{{ this.$router.params.password }}</p> -->
       <!--<p>{{ this.$router.params.username }}</p>-->
     </div>        
@@ -60,6 +65,7 @@ import HelloWorld from '@/components/HelloWorld.vue'
 import PieCustom from '@/components/PieCustom.vue'
 import PieElder from '@/components/PieElder.vue'
 import LineUser from '@/components/LineUser.vue'
+import Monitor from '@/components/Monitor.vue'
 import {mapGetters} from 'vuex'
 
 export default {
@@ -71,13 +77,14 @@ export default {
     }
   },
   computed: {
-    ...mapGetters(['getUser', 'isLogin', 'getRole', 'getToken'])
+    ...mapGetters(['getUser', 'isLogin', 'getRole', 'getToken', 'getUserId'])
   },
   components: {
     HelloWorld,
     PieCustom,
     PieElder,
-    LineUser
+    LineUser,
+    Monitor
   },
   mounted() {
     this.ifSeen = !this.isLogin

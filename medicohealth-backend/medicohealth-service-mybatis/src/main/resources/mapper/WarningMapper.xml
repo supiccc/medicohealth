@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.supi.mh.service.mybatis.dao.WarningMapper" >
+  <resultMap id="BaseResultMap" type="com.supi.mh.entity.pojo.Warning" >
+    <id column="idwarning" property="idwarning" jdbcType="INTEGER" />
+    <result column="type" property="type" jdbcType="VARCHAR" />
+    <result column="time" property="time" jdbcType="TIMESTAMP" />
+    <result column="state" property="state" jdbcType="TINYINT" />
+    <result column="elder_id" property="elderId" jdbcType="INTEGER" />
+    <result column="comment" property="comment" jdbcType="VARCHAR" />
+  </resultMap>
+  <resultMap id="ResultMapWithBLOBs" type="com.supi.mh.entity.pojo.Warning" extends="BaseResultMap" >
+    <result column="content" property="content" jdbcType="LONGVARCHAR" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    idwarning, type, time, state, elder_id, comment
+  </sql>
+  <sql id="Blob_Column_List" >
+    content
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="ResultMapWithBLOBs" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    ,
+    <include refid="Blob_Column_List" />
+    from warning
+    where idwarning = #{idwarning,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from warning
+    where idwarning = #{idwarning,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.supi.mh.entity.pojo.Warning" >
+    insert into warning (idwarning, type, time, 
+      state, elder_id, comment, 
+      content)
+    values (#{idwarning,jdbcType=INTEGER}, #{type,jdbcType=VARCHAR}, #{time,jdbcType=TIMESTAMP}, 
+      #{state,jdbcType=TINYINT}, #{elderId,jdbcType=INTEGER}, #{comment,jdbcType=VARCHAR}, 
+      #{content,jdbcType=LONGVARCHAR})
+  </insert>
+  <insert id="insertSelective" parameterType="com.supi.mh.entity.pojo.Warning" >
+    insert into warning
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="idwarning != null" >
+        idwarning,
+      </if>
+      <if test="type != null" >
+        type,
+      </if>
+      <if test="time != null" >
+        time,
+      </if>
+      <if test="state != null" >
+        state,
+      </if>
+      <if test="elderId != null" >
+        elder_id,
+      </if>
+      <if test="comment != null" >
+        comment,
+      </if>
+      <if test="content != null" >
+        content,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="idwarning != null" >
+        #{idwarning,jdbcType=INTEGER},
+      </if>
+      <if test="type != null" >
+        #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null" >
+        #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="state != null" >
+        #{state,jdbcType=TINYINT},
+      </if>
+      <if test="elderId != null" >
+        #{elderId,jdbcType=INTEGER},
+      </if>
+      <if test="comment != null" >
+        #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.supi.mh.entity.pojo.Warning" >
+    update warning
+    <set >
+      <if test="type != null" >
+        type = #{type,jdbcType=VARCHAR},
+      </if>
+      <if test="time != null" >
+        time = #{time,jdbcType=TIMESTAMP},
+      </if>
+      <if test="state != null" >
+        state = #{state,jdbcType=TINYINT},
+      </if>
+      <if test="elderId != null" >
+        elder_id = #{elderId,jdbcType=INTEGER},
+      </if>
+      <if test="comment != null" >
+        comment = #{comment,jdbcType=VARCHAR},
+      </if>
+      <if test="content != null" >
+        content = #{content,jdbcType=LONGVARCHAR},
+      </if>
+    </set>
+    where idwarning = #{idwarning,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKeyWithBLOBs" parameterType="com.supi.mh.entity.pojo.Warning" >
+    update warning
+    set type = #{type,jdbcType=VARCHAR},
+      time = #{time,jdbcType=TIMESTAMP},
+      state = #{state,jdbcType=TINYINT},
+      elder_id = #{elderId,jdbcType=INTEGER},
+      comment = #{comment,jdbcType=VARCHAR},
+      content = #{content,jdbcType=LONGVARCHAR}
+    where idwarning = #{idwarning,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.supi.mh.entity.pojo.Warning" >
+    update warning
+    set type = #{type,jdbcType=VARCHAR},
+      time = #{time,jdbcType=TIMESTAMP},
+      state = #{state,jdbcType=TINYINT},
+      elder_id = #{elderId,jdbcType=INTEGER},
+      comment = #{comment,jdbcType=VARCHAR}
+    where idwarning = #{idwarning,jdbcType=INTEGER}
+  </update>
+</mapper>

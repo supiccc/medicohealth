@@ -1,6 +1,5 @@
 package com.supi.mh.restful.app.service.impl;
 
-import com.sun.xml.internal.ws.api.model.CheckedException;
 import com.supi.mh.restful.app.service.RedisService;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,7 +7,6 @@ import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.data.redis.core.ValueOperations;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
 import org.springframework.stereotype.Service;
-import sun.jvm.hotspot.oops.CheckedExceptionElement;
 
 import java.util.concurrent.TimeUnit;
 

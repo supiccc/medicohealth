@@ -20,6 +20,16 @@
   :text-color="theme.textColor"
   :active-text-color="theme.activeTextColor"
   ></v-menu>
+  <v-menu class="side-menu"
+  v-if="this.getRole == 'elder'"
+  :collapse="collapse"
+  :default-active="defaultActive"
+  :menus="menus_elder"
+  router
+  :background-color="theme.backgroundColor"
+  :text-color="theme.textColor"
+  :active-text-color="theme.activeTextColor"
+  ></v-menu>  
 </div>
 
 </template>
@@ -28,6 +38,7 @@ import VMenu from './vmenu'
 import menus from './menus'
 import menus_admin from './menus-admin'
 import menus_doctor from './menus-doctor'
+import menus_elder from './menus-elder'
 import {mapGetters} from 'vuex'
 export default {
   props: {
@@ -42,6 +53,7 @@ export default {
       menus,
       menus_admin,
       menus_doctor,
+      menus_elder,
       defaultActive: 'home',
       // test: 'asdfasdf'
     }

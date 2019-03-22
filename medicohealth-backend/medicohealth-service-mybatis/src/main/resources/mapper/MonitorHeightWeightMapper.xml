@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.supi.mh.service.mybatis.dao.MonitorHeightWeightMapper" >
+  <resultMap id="BaseResultMap" type="com.supi.mh.entity.pojo.MonitorHeightWeight" >
+    <id column="height_weight_id" property="heightWeightId" jdbcType="INTEGER" />
+    <result column="height" property="height" jdbcType="REAL" />
+    <result column="weight" property="weight" jdbcType="REAL" />
+    <result column="height_weight_create_time" property="heightWeightCreateTime" jdbcType="TIMESTAMP" />
+    <result column="user_elder_elder_id" property="userElderElderId" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    height_weight_id, height, weight, height_weight_create_time, user_elder_elder_id
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from monitor_height_weight
+    where height_weight_id = #{heightWeightId,jdbcType=INTEGER}
+  </select>
+  <select id="selectLatest" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+    select <include refid="Base_Column_List" />
+    from monitor_height_weight
+    where height_weight_create_time = (
+    select max(height_weight_create_time)
+    from monitor_height_weight
+    group by user_elder_elder_id
+    having user_elder_elder_id=#{elder_id,jdbcType=INTEGER});
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from monitor_height_weight
+    where height_weight_id = #{heightWeightId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.supi.mh.entity.pojo.MonitorHeightWeight" >
+    insert into monitor_height_weight (height_weight_id, height, weight, 
+      height_weight_create_time, user_elder_elder_id
+      )
+    values (#{heightWeightId,jdbcType=INTEGER}, #{height,jdbcType=REAL}, #{weight,jdbcType=REAL}, 
+      #{heightWeightCreateTime,jdbcType=TIMESTAMP}, #{userElderElderId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.supi.mh.entity.pojo.MonitorHeightWeight" >
+    insert into monitor_height_weight
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="heightWeightId != null" >
+        height_weight_id,
+      </if>
+      <if test="height != null" >
+        height,
+      </if>
+      <if test="weight != null" >
+        weight,
+      </if>
+      <if test="heightWeightCreateTime != null" >
+        height_weight_create_time,
+      </if>
+      <if test="userElderElderId != null" >
+        user_elder_elder_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="heightWeightId != null" >
+        #{heightWeightId,jdbcType=INTEGER},
+      </if>
+      <if test="height != null" >
+        #{height,jdbcType=REAL},
+      </if>
+      <if test="weight != null" >
+        #{weight,jdbcType=REAL},
+      </if>
+      <if test="heightWeightCreateTime != null" >
+        #{heightWeightCreateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userElderElderId != null" >
+        #{userElderElderId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.supi.mh.entity.pojo.MonitorHeightWeight" >
+    update monitor_height_weight
+    <set >
+      <if test="height != null" >
+        height = #{height,jdbcType=REAL},
+      </if>
+      <if test="weight != null" >
+        weight = #{weight,jdbcType=REAL},
+      </if>
+      <if test="heightWeightCreateTime != null" >
+        height_weight_create_time = #{heightWeightCreateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="userElderElderId != null" >
+        user_elder_elder_id = #{userElderElderId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where height_weight_id = #{heightWeightId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.supi.mh.entity.pojo.MonitorHeightWeight" >
+    update monitor_height_weight
+    set height = #{height,jdbcType=REAL},
+      weight = #{weight,jdbcType=REAL},
+      height_weight_create_time = #{heightWeightCreateTime,jdbcType=TIMESTAMP},
+      user_elder_elder_id = #{userElderElderId,jdbcType=INTEGER}
+    where height_weight_id = #{heightWeightId,jdbcType=INTEGER}
+  </update>
+</mapper>

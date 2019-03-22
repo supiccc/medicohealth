@@ -57,6 +57,7 @@ public class AuthServiceImpl implements AuthService {
         authProfile.setUsername(username);
         authProfile.setToken(new_token);
         authProfile.setRole(userService.findRoleNameById(user.getAuthRoleRoleId()));
+        authProfile.setUserId(user.getUserId());
         // 保存用户登录信息到redis数据库, 过期时间设置为24hour
         redisService.set(new_token, "auth_"+user.getAuthUsername(), 1440);
         return authProfile;

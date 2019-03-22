@@ -39,7 +39,7 @@ export default {
     }
   },
   methods: {
-    ...mapMutations(['setUser', 'setIsLogin', 'setSession', 'setRole']),
+    ...mapMutations(['setUser', 'setIsLogin', 'setSession', 'setRole', 'setUserId']),
     handleLogin () {
       if (!this.username || !this.password) {
         return this.$message.warning('用户名和密码不能为空')
@@ -70,6 +70,7 @@ export default {
             this.setIsLogin(true)
             this.setRole(response.data.data.role)
             this.setSession(response.data.data.token)
+            this.setUserId(response.data.data.userId)
             this.info = response.data.data.token
             this.$router.replace({name: 'home', params: {user: this.username, information: this.info}})
           } else if(response.data.code == 1) {

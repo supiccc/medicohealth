@@ -51,6 +51,14 @@ export default new Router({
             title: '机构管理'
           },
           component: () => import('@/components/TableHospital.vue')
+        },
+        {
+          path: '/monitor',
+          name: 'monitor',
+          meta: {
+            title: '健康监测'
+          },
+          component: () => import('@/components/Monitor.vue')
         }
       ]
     },

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.supi.mh.service.mybatis.dao.UserElderMapper" >
+  <resultMap id="BaseResultMap" type="com.supi.mh.entity.pojo.UserElder" >
+    <id column="elder_id" property="elderId" jdbcType="INTEGER" />
+    <result column="elder_name" property="elderName" jdbcType="VARCHAR" />
+    <result column="elder_sex" property="elderSex" jdbcType="TINYINT" />
+    <result column="elder_birth" property="elderBirth" jdbcType="DATE" />
+    <result column="elder_phone" property="elderPhone" jdbcType="VARCHAR" />
+    <result column="elder_address_country" property="elderAddressCountry" jdbcType="VARCHAR" />
+    <result column="elder_address_province" property="elderAddressProvince" jdbcType="VARCHAR" />
+    <result column="elder_address_city" property="elderAddressCity" jdbcType="VARCHAR" />
+    <result column="elder_address_district" property="elderAddressDistrict" jdbcType="VARCHAR" />
+    <result column="elder_address_street" property="elderAddressStreet" jdbcType="VARCHAR" />
+    <result column="elder_address_more" property="elderAddressMore" jdbcType="VARCHAR" />
+    <result column="auth_user_user_id" property="authUserUserId" jdbcType="INTEGER" />
+    <result column="elder_idcard" property="elderIdcard" jdbcType="VARCHAR" />
+    <result column="elder_ emergency_contact_id" property="elderEmergencyContactId" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    elder_id, elder_name, elder_sex, elder_birth, elder_phone, elder_address_country, 
+    elder_address_province, elder_address_city, elder_address_district, elder_address_street, 
+    elder_address_more, auth_user_user_id, elder_idcard, "elder_ emergency_contact_id"
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from user_elder
+    where elder_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <select id="selectByUserId" resultType="java.lang.Integer" parameterType="java.lang.Integer" >
+    select elder_id
+    from user_elder
+    where auth_user_user_id = #{userId,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from user_elder
+    where elder_id = #{elderId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.supi.mh.entity.pojo.UserElder" >
+    insert into user_elder (elder_id, elder_name, elder_sex, 
+      elder_birth, elder_phone, elder_address_country, 
+      elder_address_province, elder_address_city, 
+      elder_address_district, elder_address_street, 
+      elder_address_more, auth_user_user_id, elder_idcard, 
+      "elder_ emergency_contact_id")
+    values (#{elderId,jdbcType=INTEGER}, #{elderName,jdbcType=VARCHAR}, #{elderSex,jdbcType=TINYINT}, 
+      #{elderBirth,jdbcType=DATE}, #{elderPhone,jdbcType=VARCHAR}, #{elderAddressCountry,jdbcType=VARCHAR}, 
+      #{elderAddressProvince,jdbcType=VARCHAR}, #{elderAddressCity,jdbcType=VARCHAR}, 
+      #{elderAddressDistrict,jdbcType=VARCHAR}, #{elderAddressStreet,jdbcType=VARCHAR}, 
+      #{elderAddressMore,jdbcType=VARCHAR}, #{authUserUserId,jdbcType=INTEGER}, #{elderIdcard,jdbcType=VARCHAR}, 
+      #{elderEmergencyContactId,jdbcType=INTEGER})
+  </insert>
+  <insert id="insertSelective" parameterType="com.supi.mh.entity.pojo.UserElder" >
+    insert into user_elder
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="elderId != null" >
+        elder_id,
+      </if>
+      <if test="elderName != null" >
+        elder_name,
+      </if>
+      <if test="elderSex != null" >
+        elder_sex,
+      </if>
+      <if test="elderBirth != null" >
+        elder_birth,
+      </if>
+      <if test="elderPhone != null" >
+        elder_phone,
+      </if>
+      <if test="elderAddressCountry != null" >
+        elder_address_country,
+      </if>
+      <if test="elderAddressProvince != null" >
+        elder_address_province,
+      </if>
+      <if test="elderAddressCity != null" >
+        elder_address_city,
+      </if>
+      <if test="elderAddressDistrict != null" >
+        elder_address_district,
+      </if>
+      <if test="elderAddressStreet != null" >
+        elder_address_street,
+      </if>
+      <if test="elderAddressMore != null" >
+        elder_address_more,
+      </if>
+      <if test="authUserUserId != null" >
+        auth_user_user_id,
+      </if>
+      <if test="elderIdcard != null" >
+        elder_idcard,
+      </if>
+      <if test="elderEmergencyContactId != null" >
+        "elder_ emergency_contact_id",
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="elderId != null" >
+        #{elderId,jdbcType=INTEGER},
+      </if>
+      <if test="elderName != null" >
+        #{elderName,jdbcType=VARCHAR},
+      </if>
+      <if test="elderSex != null" >
+        #{elderSex,jdbcType=TINYINT},
+      </if>
+      <if test="elderBirth != null" >
+        #{elderBirth,jdbcType=DATE},
+      </if>
+      <if test="elderPhone != null" >
+        #{elderPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressCountry != null" >
+        #{elderAddressCountry,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressProvince != null" >
+        #{elderAddressProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressCity != null" >
+        #{elderAddressCity,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressDistrict != null" >
+        #{elderAddressDistrict,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressStreet != null" >
+        #{elderAddressStreet,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressMore != null" >
+        #{elderAddressMore,jdbcType=VARCHAR},
+      </if>
+      <if test="authUserUserId != null" >
+        #{authUserUserId,jdbcType=INTEGER},
+      </if>
+      <if test="elderIdcard != null" >
+        #{elderIdcard,jdbcType=VARCHAR},
+      </if>
+      <if test="elderEmergencyContactId != null" >
+        #{elderEmergencyContactId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.supi.mh.entity.pojo.UserElder" >
+    update user_elder
+    <set >
+      <if test="elderName != null" >
+        elder_name = #{elderName,jdbcType=VARCHAR},
+      </if>
+      <if test="elderSex != null" >
+        elder_sex = #{elderSex,jdbcType=TINYINT},
+      </if>
+      <if test="elderBirth != null" >
+        elder_birth = #{elderBirth,jdbcType=DATE},
+      </if>
+      <if test="elderPhone != null" >
+        elder_phone = #{elderPhone,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressCountry != null" >
+        elder_address_country = #{elderAddressCountry,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressProvince != null" >
+        elder_address_province = #{elderAddressProvince,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressCity != null" >
+        elder_address_city = #{elderAddressCity,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressDistrict != null" >
+        elder_address_district = #{elderAddressDistrict,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressStreet != null" >
+        elder_address_street = #{elderAddressStreet,jdbcType=VARCHAR},
+      </if>
+      <if test="elderAddressMore != null" >
+        elder_address_more = #{elderAddressMore,jdbcType=VARCHAR},
+      </if>
+      <if test="authUserUserId != null" >
+        auth_user_user_id = #{authUserUserId,jdbcType=INTEGER},
+      </if>
+      <if test="elderIdcard != null" >
+        elder_idcard = #{elderIdcard,jdbcType=VARCHAR},
+      </if>
+      <if test="elderEmergencyContactId != null" >
+        "elder_ emergency_contact_id" = #{elderEmergencyContactId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where elder_id = #{elderId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.supi.mh.entity.pojo.UserElder" >
+    update user_elder
+    set elder_name = #{elderName,jdbcType=VARCHAR},
+      elder_sex = #{elderSex,jdbcType=TINYINT},
+      elder_birth = #{elderBirth,jdbcType=DATE},
+      elder_phone = #{elderPhone,jdbcType=VARCHAR},
+      elder_address_country = #{elderAddressCountry,jdbcType=VARCHAR},
+      elder_address_province = #{elderAddressProvince,jdbcType=VARCHAR},
+      elder_address_city = #{elderAddressCity,jdbcType=VARCHAR},
+      elder_address_district = #{elderAddressDistrict,jdbcType=VARCHAR},
+      elder_address_street = #{elderAddressStreet,jdbcType=VARCHAR},
+      elder_address_more = #{elderAddressMore,jdbcType=VARCHAR},
+      auth_user_user_id = #{authUserUserId,jdbcType=INTEGER},
+      elder_idcard = #{elderIdcard,jdbcType=VARCHAR},
+      "elder_ emergency_contact_id" = #{elderEmergencyContactId,jdbcType=INTEGER}
+    where elder_id = #{elderId,jdbcType=INTEGER}
+  </update>
+</mapper>

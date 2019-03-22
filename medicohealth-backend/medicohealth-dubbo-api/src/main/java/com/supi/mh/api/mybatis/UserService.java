@@ -29,4 +29,11 @@ public interface UserService {
      * @return 用户角色信息
      */
     String findRoleNameById(Integer id);
+
+    /**
+     *  根据用户id查询居民id
+     * @param id 用户id
+     * @return 居民id
+     */
+    Integer findElderIdById(Integer id);
 }

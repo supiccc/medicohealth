@@ -1,5 +1,5 @@
 const menus = [
-    {id: '0', label: '控制面板', path: '/', icon: 'fa fa-dashboard'},
+    {id: '0', label: '首页', path: '/', icon: 'fa fa-dashboard'},
     {
         id: '1',
         icon: 'fa fa-file',

@@ -17,8 +17,12 @@
         <module>medicohealth-common</module>
         <module>medicohealth-dubbo-api</module>
         <module>medicohealth-common-impl</module>
-        <module>medicohealth-security-cas</module>
-        <module>medicohealth-security-shiro</module>
+        <!--<module>medicohealth-security-cas</module>-->
+        <!--<module>medicohealth-security-shiro</module>-->
+        <!--<module>medicohealth-service-mybatis</module>-->
+        <!--<module>medicohealth-service-email</module>-->
+        <!--<module>medicohealth-restful-app</module>-->
+        <!--<module>medicohealth-restful-email</module>-->
     </modules>
 
 

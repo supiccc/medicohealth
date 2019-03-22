@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.supi.mh.service.mybatis.dao.MonitorFatMapper" >
+  <resultMap id="BaseResultMap" type="com.supi.mh.entity.pojo.MonitorFat" >
+    <id column="fat_id" property="fatId" jdbcType="INTEGER" />
+    <result column="fat_value" property="fatValue" jdbcType="REAL" />
+    <result column="fat_create_time" property="fatCreateTime" jdbcType="TIMESTAMP" />
+    <result column="fat_metabolic_rate" property="fatMetabolicRate" jdbcType="INTEGER" />
+    <result column="fat_moisture_content" property="fatMoistureContent" jdbcType="REAL" />
+    <result column="user_elder_elder_id" property="userElderElderId" jdbcType="INTEGER" />
+  </resultMap>
+  <sql id="Base_Column_List" >
+    fat_id, fat_value, fat_create_time, fat_metabolic_rate, fat_moisture_content, user_elder_elder_id
+  </sql>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from monitor_fat
+    where fat_id = #{fatId,jdbcType=INTEGER}
+  </select>
+  <select id="selectLatest" resultMap="BaseResultMap" parameterType="java.lang.Integer">
+    select <include refid="Base_Column_List" />
+    from monitor_fat
+    where fat_create_time = (
+    select max(fat_create_time)
+    from monitor_fat
+    group by user_elder_elder_id
+    having user_elder_elder_id=#{elder_id,jdbcType=INTEGER});
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from monitor_fat
+    where fat_id = #{fatId,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.supi.mh.entity.pojo.MonitorFat" >
+    insert into monitor_fat (fat_id, fat_value, fat_create_time, 
+      fat_metabolic_rate, fat_moisture_content, user_elder_elder_id
+      )
+    values (#{fatId,jdbcType=INTEGER}, #{fatValue,jdbcType=REAL}, #{fatCreateTime,jdbcType=TIMESTAMP}, 
+      #{fatMetabolicRate,jdbcType=INTEGER}, #{fatMoistureContent,jdbcType=REAL}, #{userElderElderId,jdbcType=INTEGER}
+      )
+  </insert>
+  <insert id="insertSelective" parameterType="com.supi.mh.entity.pojo.MonitorFat" >
+    insert into monitor_fat
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="fatId != null" >
+        fat_id,
+      </if>
+      <if test="fatValue != null" >
+        fat_value,
+      </if>
+      <if test="fatCreateTime != null" >
+        fat_create_time,
+      </if>
+      <if test="fatMetabolicRate != null" >
+        fat_metabolic_rate,
+      </if>
+      <if test="fatMoistureContent != null" >
+        fat_moisture_content,
+      </if>
+      <if test="userElderElderId != null" >
+        user_elder_elder_id,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="fatId != null" >
+        #{fatId,jdbcType=INTEGER},
+      </if>
+      <if test="fatValue != null" >
+        #{fatValue,jdbcType=REAL},
+      </if>
+      <if test="fatCreateTime != null" >
+        #{fatCreateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="fatMetabolicRate != null" >
+        #{fatMetabolicRate,jdbcType=INTEGER},
+      </if>
+      <if test="fatMoistureContent != null" >
+        #{fatMoistureContent,jdbcType=REAL},
+      </if>
+      <if test="userElderElderId != null" >
+        #{userElderElderId,jdbcType=INTEGER},
+      </if>
+    </trim>
+  </insert>
+  <update id="updateByPrimaryKeySelective" parameterType="com.supi.mh.entity.pojo.MonitorFat" >
+    update monitor_fat
+    <set >
+      <if test="fatValue != null" >
+        fat_value = #{fatValue,jdbcType=REAL},
+      </if>
+      <if test="fatCreateTime != null" >
+        fat_create_time = #{fatCreateTime,jdbcType=TIMESTAMP},
+      </if>
+      <if test="fatMetabolicRate != null" >
+        fat_metabolic_rate = #{fatMetabolicRate,jdbcType=INTEGER},
+      </if>
+      <if test="fatMoistureContent != null" >
+        fat_moisture_content = #{fatMoistureContent,jdbcType=REAL},
+      </if>
+      <if test="userElderElderId != null" >
+        user_elder_elder_id = #{userElderElderId,jdbcType=INTEGER},
+      </if>
+    </set>
+    where fat_id = #{fatId,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.supi.mh.entity.pojo.MonitorFat" >
+    update monitor_fat
+    set fat_value = #{fatValue,jdbcType=REAL},
+      fat_create_time = #{fatCreateTime,jdbcType=TIMESTAMP},
+      fat_metabolic_rate = #{fatMetabolicRate,jdbcType=INTEGER},
+      fat_moisture_content = #{fatMoistureContent,jdbcType=REAL},
+      user_elder_elder_id = #{userElderElderId,jdbcType=INTEGER}
+    where fat_id = #{fatId,jdbcType=INTEGER}
+  </update>
+</mapper>

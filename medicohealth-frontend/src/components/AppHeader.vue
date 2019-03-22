@@ -12,7 +12,7 @@
   <m-nav align="left">
     <m-nav-item v-if="this.getRole == 'admin'"><router-link to="/"><a target="_blank" class='acolor'>管理员端</a></router-link></m-nav-item>
     <m-nav-item v-if="this.getRole == 'doctor'"><router-link to="/"><a target="_blank" class='acolor'>医师端</a></router-link></m-nav-item>
-    <m-nav-item v-if="this.getRole == 'elder'"><router-link to="/"><a target="_blank" class='acolor'>客户端</a></router-link></m-nav-item>
+    <m-nav-item v-if="this.getRole == 'elder'"><router-link to="/"><a target="_blank" class='acolor'>居民端</a></router-link></m-nav-item>
     <!--
     <m-nav-item v-if="this.getRole == 'admin'"><router-link to="/login"><a target="_blank" class='acolor'>资料管理</a></router-link></m-nav-item>
     <m-nav-item v-if="this.getRole == 'admin'"><router-link to="/login"><a target="_blank" class='acolor'>系统统计</a></router-link></m-nav-item>

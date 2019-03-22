@@ -40,7 +40,12 @@ export default new Vuex.Store({
       sessionStorage.removeItem('token')
       sessionStorage.removeItem('user')
       sessionStorage.removeItem('role')
-      sessionStorage.removeItem('isLogin')      
+      sessionStorage.removeItem('isLogin')  
+      sessionStorage.removeItem('userid')    
+    },
+    setUserId(state, id) {
+      state.id = id;
+      sessionStorage.setItem('userid', id);
     }
   },
   getters: {
@@ -55,7 +60,10 @@ export default new Vuex.Store({
     },
     getToken: state => {
       return sessionStorage.getItem('token')
-    }
+    },
+    getUserId: state => {
+      return sessionStorage.getItem('userid')
+    }    
   },
   actions: {
   }
