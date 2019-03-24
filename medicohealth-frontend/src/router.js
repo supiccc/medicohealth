@@ -59,7 +59,55 @@ export default new Router({
             title: '健康监测'
           },
           component: () => import('@/components/Monitor.vue')
-        }
+        },
+        {
+          path: '/record/allergy',
+          name: 'allergy',
+          meta: {
+            title: '药物过敏'
+          },
+          component: () => import('@/components/record/Allergy.vue')
+        },
+        {
+          path: '/record/clinic',
+          name: 'clinic',
+          meta: {
+            title: '门诊病历'
+          },
+          component: () => import('@/components/record/Clinic.vue')
+        },
+        {
+          path: '/record/medicalHistory',
+          name: 'medicalHistory',
+          meta: {
+            title: '既往观察病史'
+          },
+          component: () => import('@/components/record/MedicalHistory.vue')
+        },
+        {
+          path: '/record/medical',
+          name: 'medical',
+          meta: {
+            title: '住院病历'
+          },
+          component: () => import('@/components/record/Medical.vue')
+        },                      
+        {
+          path: '/record/medication',
+          name: 'Medication',
+          meta: {
+            title: '用药记录'
+          },
+          component: () => import('@/components/record/Medication.vue')
+        },      
+        {
+          path: '/record/operation',
+          name: 'Operation',
+          meta: {
+            title: '手术记录'
+          },
+          component: () => import('@/components/record/Operation.vue')
+        },               
       ]
     },
     {
