@@ -1,6 +1,47 @@
 const menus = [
     {id: '0', label: '首页', path: '/', icon: 'fa fa-dashboard'},
-    {id: '1', label: '健康日志', path: '/', icon: 'fa fa-bar-chart'},
+    {
+      id: '1', 
+      label: '健康日志', 
+      icon: 'fa fa-bar-chart',
+      submenu: [
+        {
+          id: '9',
+          label: '血压',
+          path: '/log/bloodpressure'          
+        },
+        {
+          id: '10',
+          label: '血糖',
+          path: '/log/bloodsugar'          
+        },
+        {
+          id: '11',
+          label: '血氧',
+          path: '/log/bloodoxygen'          
+        },
+        {
+          id: '12',
+          label: 'BMI',
+          path: '/log/heightWeight'          
+        },
+        {
+          id: '13',
+          label: '脂肪',
+          path: '/log/fat'          
+        },
+        {
+          id: '14',
+          label: '胆固醇',
+          path: '/log/cholesterol'          
+        },
+        {
+          id: '15',
+          label: '尿酸',
+          path: '/log/uridAcid'          
+        },                                                     
+      ]
+    },
     {
       id: '2', 
       label: '健康档案', 

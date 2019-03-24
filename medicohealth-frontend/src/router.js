@@ -107,7 +107,63 @@ export default new Router({
             title: '手术记录'
           },
           component: () => import('@/components/record/Operation.vue')
-        },               
+        },
+        {
+          path: '/log/bloodpressure',
+          name: 'BloodPressureLog',
+          meta: {
+            title: '血压记录',
+          },
+          component: () => import('@/components/healthlog/BloodPressure.vue')
+        },        
+        {
+          path: '/log/bloodsugar',
+          name: 'BloodSugarLog',
+          meta: {
+            title: '血糖记录',
+          },
+          component: () => import('@/components/healthlog/BloodSugar.vue')
+        }, 
+        {
+          path: '/log/bloodoxygen',
+          name: 'BloodOxygenLog',
+          meta: {
+            title: '血氧记录',
+          },
+          component: () => import('@/components/healthlog/BloodOxygen.vue')
+        }, 
+        {
+          path: '/log/heightWeight',
+          name: 'HeightWeightLog',
+          meta: {
+            title: 'BMI记录',
+          },
+          component: () => import('@/components/healthlog/HeightWeight.vue')
+        }, 
+        {
+          path: '/log/fat',
+          name: 'FatLog',
+          meta: {
+            title: '脂肪记录',
+          },
+          component: () => import('@/components/healthlog/Fat.vue')
+        }, 
+        {
+          path: '/log/cholesterol',
+          name: 'CholesterolLog',
+          meta: {
+            title: '胆固醇记录',
+          },
+          component: () => import('@/components/healthlog/Cholesterol.vue')
+        }, 
+        {
+          path: '/log/uridAcid',
+          name: 'UridAcidLog',
+          meta: {
+            title: '尿酸记录',
+          },
+          component: () => import('@/components/healthlog/UridAcid.vue')
+        },                                                        
       ]
     },
     {
