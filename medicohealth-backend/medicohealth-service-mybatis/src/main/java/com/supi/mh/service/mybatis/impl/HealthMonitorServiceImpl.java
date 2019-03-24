@@ -74,7 +74,7 @@ public class HealthMonitorServiceImpl implements HealthMonitorService {
 
     @Override
     public int insertBloodSugar(MonitorBloodSugar record) {
-        return 0;
+        return monitorBloodSugarMapper.insertSelective(record);
     }
 
     /**
@@ -123,8 +123,8 @@ public class HealthMonitorServiceImpl implements HealthMonitorService {
     }
 
     @Override
-    public int insertHeightWeight(int id) {
-        return 0;
+    public int insertHeightWeight(MonitorHeightWeight record) {
+        return monitorHeightWeightMapper.insertSelective(record);
     }
 
     @Override

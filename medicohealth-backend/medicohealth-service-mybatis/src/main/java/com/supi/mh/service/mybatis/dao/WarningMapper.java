@@ -1,7 +1,11 @@
 package com.supi.mh.service.mybatis.dao;
 
 import com.supi.mh.entity.pojo.Warning;
+import org.springframework.stereotype.Repository;
 
+import java.util.ArrayList;
+
+@Repository
 public interface WarningMapper {
     int deleteByPrimaryKey(Integer idwarning);
 
@@ -16,4 +20,6 @@ public interface WarningMapper {
     int updateByPrimaryKeyWithBLOBs(Warning record);
 
     int updateByPrimaryKey(Warning record);
+
+    ArrayList<Warning> selectAll();
 }

@@ -16,4 +16,5 @@ public interface MonitorBloodSugarMapper {
     int updateByPrimaryKey(MonitorBloodSugar record);
 
     MonitorBloodSugar selectLatest(int elder_id);
+
 }

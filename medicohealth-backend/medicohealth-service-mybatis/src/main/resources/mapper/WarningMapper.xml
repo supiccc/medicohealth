@@ -26,6 +26,12 @@
     from warning
     where idwarning = #{idwarning,jdbcType=INTEGER}
   </select>
+  <select id="selectAll" resultMap="BaseResultMap">
+    select
+    idwarning, type, time, state, elder_id, comment, content
+    from warning
+    order by time desc
+  </select>
   <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
     delete from warning
     where idwarning = #{idwarning,jdbcType=INTEGER}

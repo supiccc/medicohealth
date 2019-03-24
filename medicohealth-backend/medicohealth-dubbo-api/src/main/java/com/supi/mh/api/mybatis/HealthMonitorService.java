@@ -30,7 +30,7 @@ public interface HealthMonitorService {
 
     MonitorHeightWeight getLatestHeightWeight(int id);
 
-    int insertHeightWeight(int id);
+    int insertHeightWeight(MonitorHeightWeight record);
 
     MonitorUricAcid getLatestUricAcid(int id);
 

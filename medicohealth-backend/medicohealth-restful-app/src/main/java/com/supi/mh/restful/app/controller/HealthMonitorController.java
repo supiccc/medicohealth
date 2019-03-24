@@ -3,6 +3,7 @@ package com.supi.mh.restful.app.controller;
 import com.alibaba.dubbo.config.annotation.Reference;
 import com.supi.mh.api.mybatis.HealthMonitorService;
 import com.supi.mh.api.mybatis.UserService;
+import com.supi.mh.api.mybatis.WarningDaoService;
 import com.supi.mh.entity.pojo.*;
 import org.springframework.beans.factory.NoUniqueBeanDefinitionException;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 import utils.ResponseJson;
 
 import javax.servlet.http.HttpServletRequest;
+import java.util.ArrayList;
 
 /**
  * Created by supiccc on 2019-03-17 23:22
@@ -35,6 +37,9 @@ public class HealthMonitorController {
     public void setH(com.supi.mh.restful.app.service.HealthMonitorService h) {
         this.h = h;
     }
+
+    @Reference(version = "1.0.0")
+    private WarningDaoService warningDaoService;
 
     /**
      * 获取居民最新的血压值
@@ -204,15 +209,76 @@ public class HealthMonitorController {
      * @return 0 成功；1 失败
      */
     @RequestMapping("/insert/bloodpressure")
-    public ResponseJson insertBloodPressure(MonitorBloodPressure m, HttpServletRequest request) {
-        // 判断用户是否登录
-//        String token = request.getHeader("token") == null ? "" : request.getHeader("token");
-//        if (token.equals("")) return new ResponseJson(2, "no login", null);
+    public ResponseJson insertBloodPressure(int id, MonitorBloodPressure m, HttpServletRequest request) {
+//         判断用户是否登录
+        String token = request.getHeader("token") == null ? "" : request.getHeader("token");
+        if (token.equals("")) return new ResponseJson(2, "no login", null);
 
         // 判断是否本人
+
+        int elder_id = userService.findElderIdById(id);
+        m.setElderId(elder_id);
 
         // 插入
         return h.insertBloodPressure(m) ? new ResponseJson(0, "success", null) : new ResponseJson(1,"error", null);
 
+    }
+
+    /**
+     * 插入新的血糖值
+     * @param id 用户id
+     * @param m 新值
+     * @param request 请求
+     * @return
+     */
+    @RequestMapping("/insert/bloodsugar")
+    public ResponseJson insertBloodSugar(int id, MonitorBloodSugar m, HttpServletRequest request) {
+//         判断用户是否登录
+        String token = request.getHeader("token") == null ? "" : request.getHeader("token");
+        if (token.equals("")) return new ResponseJson(2, "no login", null);
+
+        int elder_id = userService.findElderIdById(id);
+        m.setUserElderElderId(elder_id);
+
+        return h.insertBloodSugar(m) ? new ResponseJson(0, "success", null) : new ResponseJson(1,"error", null);
+    }
+
+    /**
+     * 插入身高体重
+     * @param id 用户id
+     * @param m 新值
+     * @param request 请求
+     * @return
+     */
+    @RequestMapping("/insert/heightweight")
+    public ResponseJson insertHeightWeight(int id, MonitorHeightWeight m, HttpServletRequest request) {
+//         判断用户是否登录
+        String token = request.getHeader("token") == null ? "" : request.getHeader("token");
+        if (token.equals("")) return new ResponseJson(2, "no login", null);
+
+        int elder_id = userService.findElderIdById(id);
+        m.setUserElderElderId(elder_id);
+
+        return h.insertHeightWeight(m) ? new ResponseJson(0, "success", null) : new ResponseJson(1,"error", null);
+    }
+
+    /**
+     * 获取所有预警信息
+     * @param request 请求
+     * @return 预警信息列表
+     */
+    @RequestMapping("/get/warnings")
+    public ResponseJson getWarnings(HttpServletRequest request) {
+//         判断用户是否登录
+        String token = request.getHeader("token") == null ? "" : request.getHeader("token");
+        if (token.equals("")) return new ResponseJson(2, "no login", null);
+
+        try {
+            ArrayList<Warning> w = warningDaoService.getAll();
+            return new ResponseJson(0, null, w);
+        } catch (NullPointerException e) {
+            e.printStackTrace();
+            return new ResponseJson(1, null, null);
+        }
     }
 }

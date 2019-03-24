@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import java.io.Serializable;
 import java.util.Date;
 
-public class MonitorBloodOxygen implements Serializable {
+public class MonitorBloodOxygen extends Monitor implements Serializable {
     private Integer bloodOxygenId;
 
     private Float bloodOxygenValue;

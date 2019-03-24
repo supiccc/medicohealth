@@ -7,7 +7,7 @@
               <el-card class="box-card">
                 <div slot="header" class="clearfix">
                   <span>血压(mmHg)</span>
-                  <el-button style="float: right; padding: 3px 0" type="text">更新</el-button>
+                  <el-button style="float: right; padding: 3px 0" type="text" @click="dialogBloodPressureVisible = true">更新</el-button>
                 </div>
                 <div class="text item">
                   {{'时间: ' + this.LastestBloodPressure.bloodPressureCreateTime}}
@@ -123,22 +123,35 @@
                 </div>                                     
               </el-card>          
             </el-col>     
-          </el-row>            
+          </el-row>
+          <el-dialog :visible.sync="dialogBloodPressureVisible">
+            <el-form :model="newBloodPressure" :rules="this.rules">
+              <el-form-item label="舒张压" :label-width="formLabelWidth" prop="diastolic">
+                <el-input v-model="newBloodPressure.diastolic" autocomplete="off"></el-input>
+              </el-form-item>
+              <el-form-item label="收缩压" :label-width="formLabelWidth" prop="shrink">
+                <el-input v-model="newBloodPressure.shrink" autocomplete="off"></el-input>
+              </el-form-item>
+              <el-form-item label="脉搏" :label-width="formLabelWidth" prop="pulse">
+                <el-input v-model="newBloodPressure.pulse" autocomplete="off"></el-input>
+              </el-form-item>                            
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+              <el-button @click="dialogBloodPressureVisible = false">取 消</el-button>
+              <el-button type="primary" @click="updateBloodPressure">确 定</el-button>
+            </div>
+          </el-dialog>                      
         </el-tab-pane>
         <el-tab-pane label="预警信息" name="second">
 
           <div class="cantainer" style="margin:20px 10px 0 10px;" >
               <el-table
-                  :data="userList.filter(data => !search || data.hospitalName.toLowerCase()
-                  .includes(search.toLowerCase())).slice((currentPage-1)*pagesize,currentPage*pagesize)"
+                  :data="userList"
                   style="width: 100%" v-loading="this.loading">
-                  <el-table-column label="#" prop="hospitalId" width="50"></el-table-column>
-                  <el-table-column label="名称" prop="hospitalName" width="200"></el-table-column>
-                  <el-table-column label="省份" prop="hospitalAddressProvince" width="100"></el-table-column>
-                  <el-table-column label="城市" prop="hospitalAddressCity"></el-table-column>
-                  <el-table-column label="区/县" prop="hospitalAddressDistrict"></el-table-column>
-                  <el-table-column label="街道" prop="hospitalAddressStreet"></el-table-column>             
-                  <el-table-column label="联系方式" prop="hospitalPhone"></el-table-column> 
+                  <el-table-column label="预警类型" prop="type" width="100"></el-table-column>
+                  <el-table-column label="预警内容" prop="content"></el-table-column>
+                  <el-table-column label="医师建议" prop="comment"></el-table-column>
+                  <el-table-column label="预警时间" prop="time" width="100"></el-table-column>                  
               </el-table>             
               <el-pagination
                       @size-change="handleSizeChange"
@@ -148,7 +161,7 @@
                       :page-size="pagesize"        
                       layout="total, sizes, prev, pager, next, jumper"
                       :total="this.userList.length" style="margin-top: 10px;">   
-              </el-pagination>          
+              </el-pagination>
           </div>     
         </el-tab-pane>
       </el-tabs>          
@@ -225,6 +238,23 @@ export default {
           phone: ''
       },
       formLabelWidth: '120px',
+      dialogBloodPressureVisible: false,
+      newBloodPressure: {
+        diastolic: null,
+        shrink: null,
+        pulse: null
+      },
+      rules: {
+        diastolic: [
+          {required: true, trigger: 'blur', message: '请输入舒张压'}
+        ],
+        shrink: [
+          {required: true, trigger: 'blur', message: '请输入收缩压'}
+        ],
+        pulse: [
+          {required: true, trigger: 'blur', message: '请输入脉搏'}
+        ]
+      }
       // mapJson: '@/assets/map.json'    
     }
   },
@@ -423,14 +453,84 @@ export default {
           }
         })
         .catch(error => console.log(error))            
+
+      this.handleUserList();
+         
   },
   methods: {
-      handleEdit(index, row) {
-        console.log(index, row);
+      // 初始页currentPage、初始每页数据数pagesize和数据data
+      handleSizeChange: function (size) {
+              this.pagesize = size;
+              console.log(this.pagesize)  //每页下拉显示数据
       },
-      handleDelete(index, row) {
-        console.log(index, row);
-      }    
+      handleCurrentChange: function(currentPage){
+              this.currentPage = currentPage;
+              console.log(this.currentPage)  //点击第几页
+
+      },
+      updateBloodPressure() {
+          // console.log(this.newBloodPressure.diastolic)
+          if(this.newBloodPressure.diastolic == null || this.newBloodPressure.shrink == null ||
+          this.newBloodPressure.pulse == null) {
+            this.$message.warning("请输入完整信息")
+          } else {
+            this.$axios
+            .get('http://localhost:8004/monitor/v1/insert/bloodpressure',
+            {
+              params: {
+                'id': this.getUserId,
+                'diastolic': this.newBloodPressure.diastolic,
+                'shrink': this.newBloodPressure.shrink,
+                'pulse': this.newBloodPressure.pulse
+              }
+            }, 
+            {
+              headers: {
+                'token': this.getToken
+              }
+            })
+            .then(response => {
+              if(response.data.code == 0) {
+                this.dialogBloodPressureVisible = false
+                this.newBloodPressure.diastolic = null
+                this.newBloodPressure.shrink = null
+                this.newBloodPressure.pulse = null
+                this.$router.go(0)
+              } else {
+                this.$message.warning("服务器出错")
+              }
+              
+           })
+           .catch(error => console.log(error)) 
+          
+          }
+          
+      },
+      handleUserList() {
+          // this.$http.get('http://localhost:3000/userList').then(res => {  //这是从本地请求的数据接口，
+          //     this.userList = res.body
+          // })
+          this.loading = true;
+          this.$axios
+          .get("http://localhost:8004/monitor/v1/get/warnings",
+          {
+              headers: {
+                  "token": sessionStorage.getItem('token')
+              }
+          })
+          .then(response => {
+              if(response.data.code == 0) {
+                  this.userList = response.data.data;
+                  this.loading = false;
+              } else if(response.data.code == 1) {
+                  this.$message.warning("服务器内部错误")
+                  this.$router.push({name: '/'})
+              } else {
+                  this.$message.warning("未授权，请登陆授权后继续")
+                  this.$router.push({name: '/login'})
+              }
+          })
+      }      
   },
 }
 </script>

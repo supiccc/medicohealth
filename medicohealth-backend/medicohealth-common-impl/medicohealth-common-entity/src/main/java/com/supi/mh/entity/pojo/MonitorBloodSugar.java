@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import java.io.Serializable;
 import java.util.Date;
 
-public class MonitorBloodSugar implements Serializable {
+public class MonitorBloodSugar extends Monitor implements Serializable {
     private Integer bloodSugarId;
 
     private Float bloodSugarvalue;

@@ -3,7 +3,7 @@ package com.supi.mh.entity.pojo;
 import java.io.Serializable;
 import java.util.Date;
 
-public class MonitorBloodPressure implements Serializable {
+public class MonitorBloodPressure extends Monitor implements Serializable {
     private Integer bloodPressureId;
 
     private Float diastolic;

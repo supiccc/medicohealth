@@ -5,7 +5,7 @@ import com.fasterxml.jackson.annotation.JsonFormat;
 import java.io.Serializable;
 import java.util.Date;
 
-public class MonitorCholesterol implements Serializable {
+public class MonitorCholesterol extends Monitor implements Serializable {
     private Integer cholesterolId;
 
     private Float cholesterolValue;
