@@ -27,7 +27,7 @@
               <el-card class="box-card">
                 <div slot="header" class="clearfix">
                   <span>血糖(mmol/L)</span>
-                  <el-button style="float: right; padding: 3px 0" type="text">更新</el-button>
+                  <el-button style="float: right; padding: 3px 0" type="text" @click="dialogBloodSugarVisible = true">更新</el-button>
                 </div>
                 <div class="text item">
                   {{'时间: ' + this.LastestBloodSugar.bloodSugarCreateTime}}
@@ -140,7 +140,18 @@
               <el-button @click="dialogBloodPressureVisible = false">取 消</el-button>
               <el-button type="primary" @click="updateBloodPressure">确 定</el-button>
             </div>
-          </el-dialog>                      
+          </el-dialog> 
+          <el-dialog :visible.sync="dialogBloodSugarVisible">
+            <el-form :model="newBloodSugar" :rules="this.rules">
+              <el-form-item label="血糖值" :label-width="formLabelWidth" prop="bloodsugar">
+                <el-input v-model="newBloodSugar.bloodsugar" autocomplete="off"></el-input>
+              </el-form-item>                        
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+              <el-button @click="dialogBloodSugarVisible = false">取 消</el-button>
+              <el-button type="primary" @click="updateBloodSugar">确 定</el-button>
+            </div>
+          </el-dialog>                                
         </el-tab-pane>
         <el-tab-pane label="预警信息" name="second">
 
@@ -253,7 +264,14 @@ export default {
         ],
         pulse: [
           {required: true, trigger: 'blur', message: '请输入脉搏'}
+        ],
+        bloodsugar: [
+          {required: true, trigger: 'blur', message: '请输入脉搏'}
         ]
+      },
+      dialogBloodSugarVisible: false,
+      newBloodSugar: {
+        bloodsugar: null
       }
       // mapJson: '@/assets/map.json'    
     }
@@ -491,10 +509,6 @@ export default {
             })
             .then(response => {
               if(response.data.code == 0) {
-                this.dialogBloodPressureVisible = false
-                this.newBloodPressure.diastolic = null
-                this.newBloodPressure.shrink = null
-                this.newBloodPressure.pulse = null
                 this.$router.go(0)
               } else {
                 this.$message.warning("服务器出错")
@@ -530,6 +544,35 @@ export default {
                   this.$router.push({name: '/login'})
               }
           })
+      },
+      updateBloodSugar() {
+          if(this.newBloodSugar.bloodsugar == null) {
+            this.$message.warning("请输入完整信息")
+          } else {
+            this.$axios
+            .get('http://localhost:8004/monitor/v1/insert/bloodsugar',
+            {
+              params: {
+                'id': this.getUserId,
+                'bloodSugarvalue': this.newBloodSugar.bloodsugar,
+              }
+            }, 
+            {
+              headers: {
+                'token': this.getToken
+              }
+            })
+            .then(response => {
+              if(response.data.code == 0) {
+                this.$router.go(0)
+              } else {
+                this.$message.warning("服务器出错")
+              }
+              
+           })
+           .catch(error => console.log(error)) 
+          
+          }
       }      
   },
 }
