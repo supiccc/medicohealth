@@ -57,7 +57,7 @@
               <el-card class="box-card">
                 <div slot="header" class="clearfix">
                   <span>身高体重</span>
-                  <el-button style="float: right; padding: 3px 0" type="text">更新</el-button>
+                  <el-button style="float: right; padding: 3px 0" type="text" @click="dialogHeightWeightVisible = true">更新</el-button>
                 </div>
                 <div class="text item">
                   {{'时间: ' + this.LastestHeightWeight.heightWeightCreateTime}}
@@ -151,7 +151,21 @@
               <el-button @click="dialogBloodSugarVisible = false">取 消</el-button>
               <el-button type="primary" @click="updateBloodSugar">确 定</el-button>
             </div>
-          </el-dialog>                                
+          </el-dialog>  
+          <el-dialog :visible.sync="dialogHeightWeightVisible">
+            <el-form :model="newHeightWeight" :rules="this.rules">
+              <el-form-item label="身高" :label-width="formLabelWidth" prop="height">
+                <el-input v-model="newHeightWeight.height" autocomplete="off"></el-input>
+              </el-form-item> 
+              <el-form-item label="体重" :label-width="formLabelWidth" prop="weight">
+                <el-input v-model="newHeightWeight.weight" autocomplete="off"></el-input>
+              </el-form-item>                                      
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+              <el-button @click="dialogHeightWeightVisible = false">取 消</el-button>
+              <el-button type="primary" @click="updateHeightWeight">确 定</el-button>
+            </div>
+          </el-dialog>                                          
         </el-tab-pane>
         <el-tab-pane label="预警信息" name="second">
 
@@ -257,21 +271,32 @@ export default {
       },
       rules: {
         diastolic: [
-          {required: true, trigger: 'blur', message: '请输入舒张压'}
+          {required: true, trigger: 'blur', message: '请输入舒张压(mmHg)'}
         ],
         shrink: [
-          {required: true, trigger: 'blur', message: '请输入收缩压'}
+          {required: true, trigger: 'blur', message: '请输入收缩压(mmHg)'}
         ],
         pulse: [
           {required: true, trigger: 'blur', message: '请输入脉搏'}
         ],
         bloodsugar: [
-          {required: true, trigger: 'blur', message: '请输入脉搏'}
-        ]
+          {required: true, trigger: 'blur', message: '请输入血糖值(mmol/L)'}
+        ],
+        height: [
+          {required: true, trigger: 'blur', message: '请输入身高(cm)'}          
+        ],
+        weight: [
+          {required: true, trigger: 'blur', message: '请输入体重(kg)'}
+        ],
       },
       dialogBloodSugarVisible: false,
       newBloodSugar: {
         bloodsugar: null
+      },
+      dialogHeightWeightVisible: false,
+      newHeightWeight: {
+        height: null,
+        weight: null
       }
       // mapJson: '@/assets/map.json'    
     }
@@ -573,7 +598,36 @@ export default {
            .catch(error => console.log(error)) 
           
           }
-      }      
+      },
+      updateHeightWeight() {
+          if(this.newHeightWeight.height == null || this.newHeightWeight.weight == null) {
+            this.$message.warning("请输入完整信息")
+          } else {
+            this.$axios
+            .get('http://localhost:8004/monitor/v1/insert/heightweight',
+            {
+              params: {
+                'id': this.getUserId,
+                'height': this.newHeightWeight.height,
+                'weight': this.newHeightWeight.weight
+              }
+            }, 
+            {
+              headers: {
+                'token': this.getToken
+              }
+            })
+            .then(response => {
+              if(response.data.code == 0) {
+                this.$router.go(0)
+              } else {
+                this.$message.warning("服务器出错")
+              }
+              
+           })
+           .catch(error => console.log(error))  
+          }       
+      }
   },
 }
 </script>
