@@ -42,11 +42,11 @@ export default {
                     radius : '55%',
                     center: ['50%', '50%'],
                     data:[
-                        {value:335, name:'主任医师'},
-                        {value:310, name:'副主任医师'},
-                        {value:274, name:'住院医师'},
-                        {value:235, name:'其他'},
-                        {value:400, name:'主治医师'}
+                        {value:1, name:'主任医师'},
+                        {value:0, name:'副主任医师'},
+                        {value:0, name:'住院医师'},
+                        {value:1, name:'其他'},
+                        {value:0, name:'主治医师'}
                     ].sort(function (a, b) { return a.value - b.value; }),
                     roseType: 'radius',
                     label: {

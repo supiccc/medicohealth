@@ -38,8 +38,9 @@
           <span class="caret"></span>
         </a>    
         <m-dropdown-panel v-loading="this.loading">
-          <m-dropdown-item>用户信息</m-dropdown-item>
-          <m-dropdown-item>修改密码</m-dropdown-item>
+          <m-dropdown-item v-if="this.getRole == 'elder'"><router-link to="/info/elder"><a style="color: #000000">用户信息</a></router-link></m-dropdown-item>
+          <m-dropdown-item v-if="this.getRole == 'doctor'"><router-link to="/info/doctor"><a style="color: #000000">用户信息</a></router-link></m-dropdown-item>
+          <m-dropdown-item><a>修改密码</a></m-dropdown-item>
           <m-dropdown-item><a @click="toLogout">退出账号</a></m-dropdown-item>
         </m-dropdown-panel>
       </m-dropdown>

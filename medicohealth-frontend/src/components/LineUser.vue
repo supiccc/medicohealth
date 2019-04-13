@@ -34,7 +34,7 @@ export default {
             xAxis: {
                 type: 'category',
                 boundaryGap: false,
-                data: ['周一','周二','周三','周四','周五','周六','周日']
+                data: ['2019-02-20','2019-03-25','2019-03-25']
             },
             yAxis: {
                 type: 'value'
@@ -44,13 +44,13 @@ export default {
                     name:'老人',
                     type:'line',
                     stack: '总量',
-                    data:[820, 932, 901, 934, 1290, 1330, 1320]
+                    data:[1, 1, 1]
                 },
                 {
                     name:'医师',
                     type:'line',
                     stack: '总量',
-                    data:[220, 182, 191, 234, 290, 330, 310]                    
+                    data:[0, 1, 2]                    
                 }
             ]
         };

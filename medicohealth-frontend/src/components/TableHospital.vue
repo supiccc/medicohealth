@@ -13,10 +13,15 @@
             <el-table-column label="联系方式" prop="hospitalPhone"></el-table-column> 
             <el-table-column align="right" width="180">
                 <template slot="header" slot-scope="scope">
+                <!--
                     <el-input
                     v-model="search"
                     size="mini"
                     placeholder="输入关键字搜索"/>
+                    -->
+                    <el-button
+                    size="mini"
+                    @click="handleInsert()">新增</el-button>                    
                 </template>
                 <template slot-scope="scope">
                     <el-button
@@ -75,7 +80,7 @@
             </el-form>
             <div slot="footer" class="dialog-footer">
                 <el-button @click="dialogFormVisible = false">取 消</el-button>
-                <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+                <el-button type="primary" @click="handleUpdate()">确 定</el-button>
             </div>
         </el-dialog>            
     </div>
@@ -117,7 +122,8 @@
                     phone: [
                         {required: true, message: '请输入医院联系电话', trigger: 'blur'}
                     ]
-                }                
+                },
+                selected: ''                
             }
     },
     components: {
@@ -163,6 +169,7 @@
             })
         },
         handleEdit(index, row) {
+            this.selected = index
             this.form = {
                 name: row.hospitalName,
                 province: row.hospitalAddressProvince,
@@ -175,6 +182,18 @@
         },
         handleDelete(index, row) {
             console.log(index, row);
+        },
+        handleUpdate() {
+            this.userList[this.selected].hospitalName = this.form.name
+            this.userList[this.selected].hospitalAddressProvince = this.form.province
+            this.userList[this.selected].hospitalAddressCity = this.form.city
+            this.userList[this.selected].hospitalAddressDistrict = this.form.district
+            this.userList[this.selected].hospitalAddressStreet = this.form.street
+            this.userList[this.selected].hospitalPhone = this.form.phone
+            this.dialogFormVisible = false
+        },
+        handleInsert() {
+            this.$router.push({name: 'InsertHospital'})
         }        
     }
 }

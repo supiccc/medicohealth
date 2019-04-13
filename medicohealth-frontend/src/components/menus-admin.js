@@ -8,12 +8,14 @@ const menus = [
           {
             id: '2',
             label: '医师管理',
-            icon: 'fa fa-user-md'
+            icon: 'fa fa-user-md',
+            path: '/doctor'
           },
           {
             id: '3',
             label: '老人管理',
-            icon: 'fa fa-wheelchair'
+            icon: 'fa fa-wheelchair',
+            path: '/elder'
           },
           {
             id: '4',

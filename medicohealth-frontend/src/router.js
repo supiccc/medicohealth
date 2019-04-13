@@ -53,6 +53,22 @@ export default new Router({
           component: () => import('@/components/TableHospital.vue')
         },
         {
+          path: '/elder',
+          name: 'elder',
+          meta: {
+            title: '老人管理'
+          },
+          component: () => import('@/components/TableElder.vue')
+        },        
+        {
+          path: '/doctor',
+          name: 'doctor',
+          meta: {
+            title: '医师管理'
+          },
+          component: () => import('@/components/TableDoctor.vue')
+        },           
+        {
           path: '/monitor',
           name: 'monitor',
           meta: {
@@ -163,7 +179,71 @@ export default new Router({
             title: '尿酸记录',
           },
           component: () => import('@/components/healthlog/UridAcid.vue')
-        },                                                        
+        },   
+        {
+          path: '/info/elder',
+          name: 'ElderInfo',
+          meta: {
+            title: '修改资料',
+          },
+          component: () => import('@/components/user/ElderInfo.vue')
+        },
+        {
+          path: '/info/doctor',
+          name: 'DoctorInfo',
+          meta: {
+            title: '修改资料',
+          },
+          component: () => import('@/components/user/DoctorInfo.vue')
+        },
+        {
+          path: '/doctor/pie/doctor',
+          name: 'DoctorPieDoctor',
+          meta: {
+            title: '职工统计',
+          },
+          component: () => import('@/components/doctor/PieDoctor.vue')
+        },
+        {
+          path: '/doctor/pie/elder',
+          name: 'DoctorPieElder',
+          meta: {
+            title: '居民统计',
+          },
+          component: () => import('@/components/doctor/PieElder.vue')          
+        },
+        {
+          path: '/doctor/elder/look',
+          name: 'ElderLook',
+          meta: {
+            title: '居民管理',
+          },
+          component: () => import('@/components/doctor/ElderLook.vue')   
+        },
+        {
+          path: '/insert/elder',
+          name: 'InsertElder',
+          meta: {
+            title: '新增居民'
+          },
+          component: () => import('@/components/insert/InsertElder.vue')   
+        },
+        {
+          path: '/insert/doctor',
+          name: 'InsertDoctor',
+          meta: {
+            title: '新增医师'
+          },
+          component: () => import('@/components/insert/InsertDoctor.vue')   
+        },
+        {
+          path: '/insert/hospital',
+          name: 'InsertHospital',
+          meta: {
+            title: '新增医院'
+          },
+          component: () => import('@/components/insert/InsertHospital.vue')   
+        }                                                                           
       ]
     },
     {

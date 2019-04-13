@@ -38,7 +38,7 @@
       <el-table-column
         align="right">
         <template slot="header" slot-scope="scope">      
-          <el-button size="mini">新增</el-button>
+          <el-button @click="dialogFormVisible = true" size="mini">新增</el-button>
         </template>    
       </el-table-column>     
     </el-table>
@@ -50,7 +50,48 @@
             :page-size="pagesize"        
             layout="total, sizes, prev, pager, next, jumper"
             :total="this.tableData.length" style="margin-top: 10px;">   
-    </el-pagination>      
+    </el-pagination>
+        <el-dialog title="新增病历信息" :visible.sync="dialogFormVisible">
+            <el-form :model="form" :rules="this.rules" ref="form">
+                <el-form-item label="患者姓名" :label-width="formLabelWidth" prop="name">
+                    <el-input v-model="form.name" autocomplete="off" placeholder="必填"></el-input>
+                </el-form-item>
+                <el-form-item label="医院" :label-width="formLabelWidth" prop="province">
+
+                    <el-input v-model="form.province" autocomplete="off" placeholder="必填"></el-input>
+                    <!--
+                    <el-select v-model="province" @change="choseProvince" placeholder="省级地区">
+                    -->
+                </el-form-item>     
+                <el-form-item label="科室" :label-width="formLabelWidth" prop="city">
+                    <el-input v-model="form.city" autocomplete="off" placeholder="必填"></el-input>
+                </el-form-item>                                               
+                <el-form-item label="主诉" :label-width="formLabelWidth" prop="street">
+                    <el-input type="textarea" autosize v-model="form.street" autocomplete="off" placeholder="必填"></el-input>
+                </el-form-item>        
+                <el-form-item label="初步诊断" :label-width="formLabelWidth" prop="phone">
+                    <el-input type="textarea" autosize v-model="form.phone" autocomplete="off" placeholder="必填"></el-input>
+                </el-form-item>   
+                <el-form-item label="处理意见" :label-width="formLabelWidth" prop="hospital">
+                    <el-input type="textarea" autosize v-model="form.hospital" autocomplete="off" placeholder="必填"></el-input>
+                </el-form-item> 
+                <el-form-item label="药品" :label-width="formLabelWidth" prop="hospital">
+                    <el-input type="textarea" autosize v-model="form.hospital" autocomplete="off" placeholder="必填"></el-input>
+                </el-form-item>                                                                    
+                <!--
+                <el-form-item label="活动区域" :label-width="formLabelWidth">
+                <el-select v-model="form.region" placeholder="请选择活动区域">
+                    <el-option label="区域一" value="shanghai"></el-option>
+                    <el-option label="区域二" value="beijing"></el-option>
+                </el-select>
+                </el-form-item>
+                -->
+            </el-form>
+            <div slot="footer" class="dialog-footer">
+                <el-button @click="dialogFormVisible = false">取 消</el-button>
+                <el-button type="primary" @click="dialogFormVisible = false">确 定</el-button>
+            </div>
+        </el-dialog>           
   </div>
 
 </template>
@@ -82,7 +123,11 @@ export default {
             doctor: '方世玉'
           }          
         ],
-        search: ''
+        search: '',
+        dialogFormVisible: false,
+        form: {
+
+        }
       }
     },
     methods: {

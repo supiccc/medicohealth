@@ -79,7 +79,7 @@ export default {
   }
   .app-container .app-header{
     padding: 0;
-    background: #16AAD8;
+    background: #ffffff;
     overflow: visible;
     z-index: 100;
   }
@@ -88,7 +88,7 @@ export default {
     transition: all 0.5s ease;
   }
   .app-container .app-body{
-    background: #ECF0F5;
+    background: #ffffff;
     padding: 0;
   }
   .app-container .app-footer{

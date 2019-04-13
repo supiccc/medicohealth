@@ -31,6 +31,16 @@ public class UserElder {
 
     private Integer elderEmergencyContactId;
 
+    private Integer hospitalId;
+
+    public Integer getHospitalId() {
+        return hospitalId;
+    }
+
+    public void setHospitalId(Integer hospitalId) {
+        this.hospitalId = hospitalId;
+    }
+
     public Integer getElderId() {
         return elderId;
     }

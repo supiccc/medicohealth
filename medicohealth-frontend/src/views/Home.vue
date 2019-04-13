@@ -48,11 +48,14 @@
       <!--<p>{{ this.$router.params.username }}</p>-->
     </div>
     <div v-if="this.getRole == 'doctor'">
+      <!--
       <img alt="Vue logo" src="../assets/logo.png">
       <HelloWorld msg="Welcome to Your Vue.js App" v-if='ifSeen'/>
       <p v-if='isLogin'>用户名：{{ this.getUser }}</p>
       <p v-if='isLogin'>信息：{{ this.getToken }}</p>
       <p v-if='isLogin'>信息：{{ this.getUserId }}</p>
+      -->
+      <WarningHandler></WarningHandler>
       <!-- <p>{{ this.$router.params.password }}</p> -->
       <!--<p>{{ this.$router.params.username }}</p>-->
     </div>        
@@ -66,6 +69,7 @@ import PieCustom from '@/components/PieCustom.vue'
 import PieElder from '@/components/PieElder.vue'
 import LineUser from '@/components/LineUser.vue'
 import Monitor from '@/components/Monitor.vue'
+import WarningHandler from '@/components/doctor/WarningHandler.vue'
 import {mapGetters} from 'vuex'
 
 export default {
@@ -84,7 +88,8 @@ export default {
     PieCustom,
     PieElder,
     LineUser,
-    Monitor
+    Monitor,
+    WarningHandler
   },
   mounted() {
     this.ifSeen = !this.isLogin

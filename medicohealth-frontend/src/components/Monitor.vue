@@ -171,7 +171,7 @@
 
           <div class="cantainer" style="margin:20px 10px 0 10px;" >
               <el-table
-                  :data="userList"
+                  :data="userList.slice((currentPage-1)*pagesize,currentPage*pagesize)"
                   style="width: 100%" v-loading="this.loading">
                   <el-table-column label="预警类型" prop="type" width="100"></el-table-column>
                   <el-table-column label="预警内容" prop="content"></el-table-column>

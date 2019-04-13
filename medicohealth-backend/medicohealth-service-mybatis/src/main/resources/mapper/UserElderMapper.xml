@@ -16,11 +16,12 @@
     <result column="auth_user_user_id" property="authUserUserId" jdbcType="INTEGER" />
     <result column="elder_idcard" property="elderIdcard" jdbcType="VARCHAR" />
     <result column="elder_ emergency_contact_id" property="elderEmergencyContactId" jdbcType="INTEGER" />
+    <result column="hospital_id" property="hospitalId" jdbcType="INTEGER" />
   </resultMap>
   <sql id="Base_Column_List" >
     elder_id, elder_name, elder_sex, elder_birth, elder_phone, elder_address_country, 
     elder_address_province, elder_address_city, elder_address_district, elder_address_street, 
-    elder_address_more, auth_user_user_id, elder_idcard, "elder_ emergency_contact_id"
+    elder_address_more, auth_user_user_id, elder_idcard, "elder_ emergency_contact_id", hospital_id
   </sql>
   <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
     select 
@@ -43,13 +44,13 @@
       elder_address_province, elder_address_city, 
       elder_address_district, elder_address_street, 
       elder_address_more, auth_user_user_id, elder_idcard, 
-      "elder_ emergency_contact_id")
+      "elder_ emergency_contact_id"), hospital_id
     values (#{elderId,jdbcType=INTEGER}, #{elderName,jdbcType=VARCHAR}, #{elderSex,jdbcType=TINYINT}, 
       #{elderBirth,jdbcType=DATE}, #{elderPhone,jdbcType=VARCHAR}, #{elderAddressCountry,jdbcType=VARCHAR}, 
       #{elderAddressProvince,jdbcType=VARCHAR}, #{elderAddressCity,jdbcType=VARCHAR}, 
       #{elderAddressDistrict,jdbcType=VARCHAR}, #{elderAddressStreet,jdbcType=VARCHAR}, 
       #{elderAddressMore,jdbcType=VARCHAR}, #{authUserUserId,jdbcType=INTEGER}, #{elderIdcard,jdbcType=VARCHAR}, 
-      #{elderEmergencyContactId,jdbcType=INTEGER})
+      #{elderEmergencyContactId,jdbcType=INTEGER}), #{hospitalId,jdbcType=INTEGER}
   </insert>
   <insert id="insertSelective" parameterType="com.supi.mh.entity.pojo.UserElder" >
     insert into user_elder
@@ -96,6 +97,9 @@
       <if test="elderEmergencyContactId != null" >
         "elder_ emergency_contact_id",
       </if>
+      <if test="hospitalId != null" >
+        hospital_id
+      </if>
     </trim>
     <trim prefix="values (" suffix=")" suffixOverrides="," >
       <if test="elderId != null" >
@@ -139,6 +143,9 @@
       </if>
       <if test="elderEmergencyContactId != null" >
         #{elderEmergencyContactId,jdbcType=INTEGER},
+      </if>
+      <if test="hospitalId != null" >
+        #{hospitalId,jdbc=INTERGER}
       </if>
     </trim>
   </insert>
@@ -184,6 +191,9 @@
       <if test="elderEmergencyContactId != null" >
         "elder_ emergency_contact_id" = #{elderEmergencyContactId,jdbcType=INTEGER},
       </if>
+      <if test="hospitalId != null" >
+        #{hospitalId,jdbc=INTERGER}
+      </if>
     </set>
     where elder_id = #{elderId,jdbcType=INTEGER}
   </update>
@@ -201,7 +211,8 @@
       elder_address_more = #{elderAddressMore,jdbcType=VARCHAR},
       auth_user_user_id = #{authUserUserId,jdbcType=INTEGER},
       elder_idcard = #{elderIdcard,jdbcType=VARCHAR},
-      "elder_ emergency_contact_id" = #{elderEmergencyContactId,jdbcType=INTEGER}
+      "elder_ emergency_contact_id" = #{elderEmergencyContactId,jdbcType=INTEGER},
+      hospital_id = #{hospitalId,jdbcType=INTEGER}
     where elder_id = #{elderId,jdbcType=INTEGER}
   </update>
 </mapper>

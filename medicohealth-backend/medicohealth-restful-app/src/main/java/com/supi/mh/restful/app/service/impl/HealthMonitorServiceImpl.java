@@ -91,6 +91,7 @@ public class HealthMonitorServiceImpl implements HealthMonitorService {
             w.setState((byte) 0);
             w.setContent(content.toString());
             w.setType(type);
+            w.setElderId(record.getUserElderElderId());
             healthMonitorService.insertWarning(w);
         }
         return true;
